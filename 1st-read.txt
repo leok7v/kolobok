@@ -1,0 +1,63 @@
+Simple coding rules:
+
+ * compile both Debug and Release with /W4 (use pragmas to supress warnings)
+ * put build and .bsc files to ./tmp/Debug/<projectname> and ./tmp/Release/<projectname>
+ * do not use precompiled headers (ever!)
+ * set optimization for Min Size and inline any suitable
+ * set debug info to C7 (not pdb)
+ * uncheck using pdb in C compiler
+ * uncheck exception handling enabled in C++
+ * check RTII for C++
+ * uncheck "use .pdb" in all linker configs and incrimental link in linker settings
+ * make sure we link with multithreaded and debug multithreaded static lib runtime
+ * put binaries to ./bin/<projectname>.exe for release and ./bin/<projectname>-g.exe for debug
+ * put libraries to ./lib/<projectname>.exe for release and ./lib/<projectname>-g.exe for release
+ * include headers from external libraries are copied (not linked!) to ./include/ directory
+ * individual projects are under ./projects/<projectname>/ and ./projects/all.dsw is
+   a workspace for all the projects.
+ * don't forget to run clean.bat before any check in.
+ * do not check in .plg .opt .ncb .aps files into version control system
+ * all projects compiled with UNICODE defined
+ * see manifest.h for types and use them
+ * in C++ we are not using:
+   1. Templates
+   2. Mutiple inheritance
+   3. Global multithreading
+   4. Exceptions
+   5. namespaces
+ * operator new never returns "null" 
+   (OutOfMemory is a fatal error, safety pool and 
+    user warning will be implemented)
+ * new zeros allocated memory
+ * delete null is OK don't blotter the code with if (p != null)
+ * TAB=4, intend=4 but I would really appreciate if you keep
+   your editor in "insert spaces for tabs" mode
+
+ * skin.xml (and all other XML files) are in UTF-8
+   All code should detect and skip UTF-8 BOM (EF BB BF) prefix
+   but also work when it is absent. The reason for UTF-8 versus
+   UTF-16 is that SVN (and a lot of other tools) do not calculate
+   diffs and do not do a lot of useful operations with UTF-16
+   and... at the end of the day UTF-16 is deficient anyhow...
+   See Str::fromUTF8 and Str::toUTF8
+
+Utility classes:
+
+* all collections are deep cloning and deep equal
+* any method returning `Obj*` expects caller to delete result.
+* any method returning `const Obj*` gives caller access to the
+  object but caller must not cache and/or delete the result.
+* if you need to put addresses into collections as references 
+  (and prevent elements from cloning) cast addresses to (int) or
+  (longlong) it will be wrapped into Long. Cast returned Object* 
+  to (const Long*) and use longValue() or intValue() as an address.
+* singnificatn difference from Java:
+      const Object* o = map.get("key");
+      if (o == null) map.put("key", o = new Object());
+      // here o does NOT points on what in the map!!!
+  code above produces memory leak and any further operations
+  with object do not modify object clone that resides in the map.
+  Instead use:
+      const Object* o = map.get("key");
+      if (o == null) o = map.put("key", Object());
+  this produces correct results.

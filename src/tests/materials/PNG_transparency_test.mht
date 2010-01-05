@@ -1,0 +1,2301 @@
+From: <Saved by Microsoft Internet Explorer 5>
+Subject: PNG transparency test
+Date: Wed, 8 Jun 2005 13:15:53 -0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----=_NextPart_000_0000_01C56C2C.32F78410"
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2900.2527
+
+This is a multi-part message in MIME format.
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: text/html;
+	charset="Windows-1252"
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>PNG transparency test</TITLE>
+<META http-equiv=3DContent-Type content=3D"text/html; =
+charset=3Dwindows-1252">
+<META content=3D"MSHTML 6.00.2900.2627" name=3DGENERATOR></HEAD>
+<BODY text=3D#000000 vLink=3D#c000c0 link=3D#0000f0 bgColor=3D#ffff00=20
+background=3Dhttp://entropymine.com/jason/testbed/pngtrans/stripe.gif>
+<TABLE cellPadding=3D5 width=3D"100%" bgColor=3D#e0e0e0 border=3D0>
+  <TBODY>
+  <TR>
+    <TD>
+      <H1>PNG transparency test</H1>
+      <P>Examine the test images in the left column below. To determine =
+how your=20
+      browser handles PNG transparency, find the images on the right =
+that look=20
+      the most similar.=20
+      <P>Not all possible results are shown; there are too many =
+combinations of=20
+      background colors and shapes of the opaque region. However, I =
+intend to=20
+      include every result that actually occurs in a mainstream browser. =
+If I am=20
+      missing any, please <A href=3D"mailto:jason1@pobox.com">let me =
+know</A>.=20
+      <P>It's come to my attention that my images which show how alpha=20
+      transparency should look are not quite perfect in regard to =
+precisely how=20
+      transparent they are at various points. Rather than try to modify =
+this=20
+      page to test gamma correction issues as well, I've created a <A=20
+      href=3D"http://entropymine.com/jason/testbed/alphagamma/">separate =
+test=20
+      page</A> for that.=20
+      <P>This test page was constructed by <A=20
+      href=3D"http://pobox.com/~jason1/">Jason Summers</A>. Comments may =
+be=20
+      emailed to <A=20
+      href=3D"mailto:jason1@pobox.com">jason1@pobox.com</A>.<BR>There =
+are <A=20
+      href=3D"http://www.libpng.org/pub/png/pngmisc.html#images">other =
+test=20
+      pages</A> listed at the PNG web site. <!-- <p>
+There's a
+<a =
+href=3D"http://www.petitiononline.com/msiepng/petition.html">petition</a>=
+
+(at PetitionOnline) for proper PNG support in IE for Windows. -->
+      <P>I am aware that MSIE 5.5+ for Windows supports an =
+"AlphaImageLoader"=20
+      filter that <A=20
+      =
+href=3D"http://webfx.eae.net/dhtml/pngbehavior/pngbehavior.html">can be=20
+      used</A> to display PNG images with transparency. Personally, I =
+don't=20
+      consider it to be an acceptable replacement for standard PNG =
+support,=20
+      though it does mostly work, with some caveats (requires the site =
+author to=20
+      modify each web page; requires scripting to be turned on; requires =
+extra=20
+      documents to be loaded from the server; prevents visitors from =
+easily=20
+      saving the image to disk; slows down processing of non-transparent =
+images;=20
+      seems to fail once in a while for no apparent reason). I don't =
+intend to=20
+      hack this page to support it, but maybe I'll put up a separate =
+test page=20
+      sometime. </P></TD></TR></TBODY></TABLE>
+<P>
+<TABLE cellSpacing=3D0 cellPadding=3D5 border=3D1>
+  <TBODY>
+  <TR>
+    <TH colSpan=3D3>Alpha and palette transparency</TH></TR>
+  <TR>
+    <TH>Test images</TH>
+    <TH colSpan=3D2>Possible results</TH></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D16>
+      <P><B>(T1)</B> 8-bit palette, includes background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/pal_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T2)</B> 8-bit palette, no background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/pal.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T3)</B> 32-bit RGBA, includes background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/rgba8_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T4)</B> 32-bit RGBA, no background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/rgba8.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T5)</B> 64-bit RGBA, includes background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/rgba16_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T6)</B> 64-bit RGBA, no background color:<BR><IMG =
+height=3D62=20
+      alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/rgba16.png" =
+width=3D85=20
+      vspace=3D5> </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_ok.gif"=20
+    width=3D95></TD>
+    <TD bgColor=3D#ffffff>Excellent! This is what all the images in this =
+set=20
+      should look like. <I>(Netscape6; MSIE5/Mac; Opera6)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_dith.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses dithering to simulate alpha transparency. =
+This is=20
+      a good thing for the browser to do if it does not support true =
+alpha=20
+      transparency.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_yelthr1.gif" =
+
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses web page background color, and fully =
+transparent=20
+      pixels are transparent. This is another acceptable thing to do if =
+the=20
+      browser cannot support true alpha transparency.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_magthr1.gif" =
+
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses image's background color, and fully =
+transparent=20
+      pixels are transparent. While worse than the above results, this =
+is=20
+      acceptable (maybe) for tests with a background color, and is =
+relatively=20
+      easy to implement.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_yel.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; uses web page background =
+color.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_mag.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; uses the background color =
+included in=20
+      the image file. <I>(MSIE4-6/Win:T3,T5; Netscape4:T1,T3;=20
+      Opera4-5:T3,T5)</I> </TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_gra.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; defaults to a light gray =
+background.=20
+      <I>(MSIE4-6/Win:T4,T6)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_bla.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; defaults to a black =
+background.=20
+      <I>(Opera4-5:T6)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_whi.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; defaults to a white =
+background.=20
+      <I>(Opera4-5:T4)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_thr1.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Only fully transparent pixels are transparent. =
+Shown=20
+      with a white background, but your background may differ.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_thr128.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses an arbitrary threshhold of opacity. Shown =
+with a=20
+      white background, but your background may differ. The position at =
+which=20
+      image becomes transparent may also differ. This is potentially =
+bad, since=20
+      some images may not have <EM>any</EM> pixels over the =
+threshhold.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_thr255.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Discards all partially transparent pixels. =
+This is=20
+      very bad. <I>(MSIE4-6/Win:T1,T2)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_no.gif"=20
+    width=3D95></TD>
+    <TD bgColor=3D#ffffff>Ignores transparency completely. This is =
+pretty bad,=20
+      since an image may be useless (e.g. all one color) without the=20
+      transparency data. <I>(Netcscape4:T2,T4,T6)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_1trns.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>This could mean that the browser supports only =
+one=20
+      transparent palette entry, and it chooses the first completely =
+transparent=20
+      one found.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_oprbug.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Browser is under the delusion that the =
+transparency=20
+      data is a palette index, rather than an alpha value.=20
+      <I>(Opera4-5:T1,T2)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_16ns.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Bizarre. Netscape seems to sometimes use the =
+wrong=20
+      blue value when compositing. <I>(Netscape4:T5)</I></TD></TR>
+  <TR>
+    <TH colSpan=3D3>RGB binary transparency</TH></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D8>
+      <P><B>(T7)</B> 24-bit RGB, binary transparency, includes =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/rgb8_t_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T8)</B> 24-bit RGB, binary transparency, no background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/rgb8_t.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(T9)</B> 48-bit RGB, binary transparency, includes =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/rgb16_t_bk.png"=20
+      width=3D85 vspace=3D5>=20
+      <P><B>(T10)</B> 48-bit RGB, binary transparency, no background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/rgb16_t.png" =
+width=3D85=20
+      vspace=3D5> </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_ok.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>This is correct.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_yel.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses web page's background color.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_mag.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Uses image's background color.=20
+    <I>(Netscape4:T7,T9)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_bla.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Defaults to black background color.=20
+      <I>(Opera4-5:T9,T10)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_whi.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Defaults to white background color.=20
+      <I>(Opera4-5:T7,T8)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_no.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Ignores transparency completely. =
+<I>(MSIE4-6/Win;=20
+      Netscape4:T8,T10)</I></TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_bug.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>This could be caused by a bug in which the =
+browser=20
+      fails to match transparent colors correctly, causing it to think =
+colors=20
+      are transparent when they aren't.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_moz2.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Strange bug in some old versions of Mozilla.=20
+      <I>(T7,T8)</I></TD></TR>
+  <TR>
+    <TH colSpan=3D3>Grayscale alpha transparency</TH></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D5>
+      <P><B>(G1)</B> 16 bpp grayscale (8 gray + 8 alpha), includes =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/gray8a_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(G2)</B> 16 bpp grayscale (8 gray + 8 alpha), no background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/gray8a.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(G3)</B> 32 bpp grayscale (16 gray + 16 alpha), includes =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/gray16a_bk.png"=20
+      width=3D85 vspace=3D5>=20
+      <P><B>(G4)</B> 32 bpp grayscale (16 gray + 16 alpha), no =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/gray16a.png" =
+width=3D85=20
+      vspace=3D5> </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/resultga.gif" =
+
+    width=3D95></TD>
+    <TD bgColor=3D#ffffff>This is correct.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultg_lgr.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; defaults to a light gray=20
+    background.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultg_dgr.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; uses image's background =
+color.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultg_bla.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; defaults to a black =
+background.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultg_no.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Ignores transparency completely.</TD></TR>
+  <TR>
+    <TH colSpan=3D3>Grayscale binary transparency</TH></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D3>
+      <P><B>(G5)</B> 8 bpp grayscale (8 gray), includes background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/gray8b_bk.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(G6)</B> 8 bpp grayscale (8 gray), no background =
+color:<BR><IMG=20
+      height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/gray8b.png" =
+width=3D85=20
+      vspace=3D5>=20
+      <P><B>(G7)</B> 16 bpp grayscale (16 gray), includes background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/gray16b_bk.png"=20
+      width=3D85 vspace=3D5>=20
+      <P><B>(G8)</B> 16 bpp grayscale (16 gray), no background =
+color:<BR><IMG=20
+      height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/gray16b.png" =
+width=3D85=20
+      vspace=3D5> </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/resultgb.gif" =
+
+    width=3D95></TD>
+    <TD bgColor=3D#ffffff>This is correct.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultgb_dgr.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>No transparency; uses image's background =
+color.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultgb_no.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Ignores transparency completely.</TD></TR>
+  <TR>
+    <TH colSpan=3D3>Miscellaneous</TH></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D2>
+      <P><B>(M1)</B> 8-bit palette, no transparency, includes background =
+
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/pal_bk_notrns.png"=20
+      width=3D85 vspace=3D5> </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_no.gif"=20
+    width=3D95></TD>
+    <TD bgColor=3D#ffffff>This is correct.</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/result_nsbug.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Wrong. You might not expect transparency =
+problems in=20
+      an image that has no transparency, but Netscape 4 manages to get =
+this=20
+      wrong. If a nontransparent paletted image has a background color, =
+it=20
+      replaces all the black pixels with the background color. This is =
+probably=20
+      caused by a libpng quirk, but Netscape has no excuse for not =
+fixing=20
+  it.</TD></TR>
+  <TR>
+    <TD vAlign=3Dtop rowSpan=3D3>
+      <P><B>(M2)</B> (4-bit) palette, binary transparency only, no =
+background=20
+      color:<BR><IMG height=3D62 alt=3D"[Test image]" hspace=3D5=20
+      src=3D"http://entropymine.com/jason/testbed/pngtrans/palb.png" =
+width=3D85=20
+      vspace=3D5><BR>(This tests a few things that may have slipped =
+through the=20
+      cracks.) </P></TD>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_ok.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>This is correct. </TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultb_moz2.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Strange bug in some old versions of Mozilla. =
+</TD></TR>
+  <TR>
+    <TD bgColor=3D#ffffff><IMG height=3D72=20
+      =
+src=3D"http://entropymine.com/jason/testbed/pngtrans/resultpb_no.gif"=20
+      width=3D95></TD>
+    <TD bgColor=3D#ffffff>Browser ignores transparency. Not as wrong as =
+the=20
+      previous. </TD></TR></TBODY></TABLE></P></BODY></HTML>
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/pal_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAMAAABtGKfxAAACT1BMVEUAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgID/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAABAgID///+A
+AAD/AP+lmdfcAAAAwHRSTlM8ODQwLCgkIBwYFBAMCAQAQERITFBUWFxgZGhscHR4fICEiIyQlJic
+oKSorLC0uLzAxMjM0NTY3ODk6Ozw9Pj8AAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyA
+hIiMkJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBk
+aGxwdHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PxTzsGTAAAAAWJLR0TEFAwb4QAA
+ARNJREFUeJxjOEwLwHD4ABzY29naWFtZWpibmZoYGxka6Ovp6mhraWqoq6mqKCspKsjLycpIS0lK
+iIuJiggLCQowMDIxs7CysXNwcnHz8PLxw8GoqaOmjpo6auqoqaOm0szUg3BQX1dbU11VWVFeVlpS
+XFRYkJ+Xm5OdlZmRnpaakpyUmBAfFxsTHRUZER4WGhIcFBjg7+fr4+3l6eHu5uri7OToAAejpo6a
+OmrqqKmjpo6aSjNTD8HB/n179+zetXPH9m1bt2zetHHD+nVr16xetXLF8mVLlyxetHDB/Hlz58ye
+NXPG9GlTp0yeNHFCf19vT3dXZ0d7W2tLc1NjAxyMmjpq6qipo6aOmjpqKs1MpQUAAIrvy8PKBZ9n
+AAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/pal.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAMAAABtGKfxAAACTFBMVEUAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgID/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAABAgID///+A
+AAB/xaDRAAAAwHRSTlM8ODQwLCgkIBwYFBAMCAQAQERITFBUWFxgZGhscHR4fICEiIyQlJicoKSo
+rLC0uLzAxMjM0NTY3ODk6Ozw9Pj8AAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiM
+kJSYnKCkqKywtLi8wMTIzNDU2Nzg5Ojs8PT4/AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxw
+dHh8gISIjJCUmJygpKissLS4vMDEyMzQ1Njc4OTo7PD0+PxTzsGTAAABE0lEQVR4nGM4TAvAcPgA
+HNjb2dpYW1lamJuZmhgbGRro6+nqaGtpaqirqaooKykqyMvJykhLSUqIi4mKCAsJCjAwMjGzsLKx
+c3BycfPw8vHDwaipo6aOmjpq6qipo6bSzNSDcFBfV1tTXVVZUV5WWlJcVFiQn5ebk52VmZGelpqS
+nJSYEB8XGxMdFRkRHhYaEhwUGODv5+vj7eXp4e7m6uLs5OgAB6Omjpo6auqoqaOmjppKM1MPwcH+
+fXv37N61c8f2bVu3bN60ccP6dWvXrF61csXyZUuXLF60cMH8eXPnzJ41c8b0aVOnTJ40cUJ/X29P
+d1dnR3tba0tzU2MDHIyaOmrqqKmjpo6aOmoqzUylBQAAiu/Lw8oFn2cAAAAASUVORK5CYII=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgba8_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAYAAABaxlfDAAAABmJLR0QA/wAAAP8eJZN+AAAA1UlE
+QVR4nO3cQYpCMRBAwY54sLnZxHs7/DmCX/AhaBVk14vwyLaz9swxvNR1Zmafn/+bmfsXn4f2zHE5
+M8hzRA2IGhA1IGpA1ICoAVEDogZEDYgaEDUgakDUgKgBUQOiBkQNiBq4zsz87P3ma3yQvb3UgqgB
+UQOiBkQNiBoQNSBqQNSAqAFRA6IGRA2IGhA1IGpA1ICoAVEDa88cv8fp/TR7VA/c1rJHVRA1IGpA
+1ICoAVEDogZEDYgaEDUgakDUgKgBUQOiBkQNiBoQNSBqYG0fKL7cP9Cjiztc+X1kAAAAAElFTkSu
+QmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgba8.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAYAAABaxlfDAAAA1UlEQVR4nO3cQYpCMRBAwY54sLnZ
+xHs7/DmCX/AhaBVk14vwyLaz9swxvNR1Zmafn/+bmfsXn4f2zHE5M8hzRA2IGhA1IGpA1ICoAVED
+ogZEDYgaEDUgakDUgKgBUQOiBkQNiBq4zsz87P3ma3yQvb3UgqgBUQOiBkQNiBoQNSBqQNSAqAFR
+A6IGRA2IGhA1IGpA1ICoAVEDa88cv8fp/TR7VA/c1rJHVRA1IGpA1ICoAVEDogZEDYgaEDUgakDU
+gKgBUQOiBkQNiBoQNSBqYG0fKL7cP9Cjiztc+X1kAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgba16_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAYAAAAKVouAAAAABmJLR0T//wAA//9pxcXAAAABBUlE
+QVR4nO3bMW4CMBAAwSPKw/IznJflYyCnQKFCaQCRVWaac2W5WLm7w1ozM3sP/GHvP4c1s2Y9+vrz
++TJPJ/M/zvutmTVr77dHXQjPJFQShEqCUEkQKglCJUGoJAiVBKGSIFQShEqCUEkQKglCJUGoJAiV
+BKGSIFQShErCdWfq4xkrU3C3S5d+VBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagk
+CJUEoZIgVBKESoJQSbjuTH3NcY6vfAnc8GlnihKhkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRK
+glBJECoJQiVBqCQIlQShkiBUEg5rzczs/eJ3wK++AUBXjvv7NCOEAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgba16.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAYAAAAKVouAAAABBUlEQVR4nO3bMW4CMBAAwSPKw/Iz
+nJflYyCnQKFCaQCRVWaac2W5WLm7w1ozM3sP/GHvP4c1s2Y9+vrz+TJPJ/M/zvutmTVr77dHXQjP
+JFQShEqCUEkQKglCJUGoJAiVBKGSIFQShEqCUEkQKglCJUGoJAiVBKGSIFQShErCdWfq4xkrU3C3
+S5d+VBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSRAqCUIlQagkCJUEoZIgVBKESoJQSbjuTH3N
+cY6vfAnc8GlnihKhkiBUEoRKglBJECoJQiVBqCQIlQShkiBUEoRKglBJECoJQiVBqCQIlQShkiBU
+Eg5rzczs/eJ3wK++AUBXjvv7NCOEAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_ok.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICAgIEBAQEBAQGBgYGBgYISEhISEhKSEhMSkpKSkpMSkpOTExMTEx
+OTExQjk5OTk5Sjl7e0JCQkJCUkJCWkKEhEpKSkpKWkpKY0qEhEqEjFJSUlJSa1KMjFKMlFpaWlpa
+c1pae1qMjFqMlFqMnGNjY2Nje2NjhGOUlGOUnGOUpWtra2trhGtrjGuUlGuUpWuUrWucnGucrXNz
+c3NzlHNznHOcnHOcrXOctXsAAHt7e3t7nHt7pXucnHuctXucvXulpXulvYSEhISEpYSErYSlpYSl
+vYSlxoyMjIyMtYylpYylxoylzoytrYytzpSUlJSUvZSUxpStrZStzpSt1pycnJycxpyczpytrZyt
+1py1tZy13qWlpaWlzqWl1qW1taW13qW1562tra2t3q2t5621ta215629va29562977W1tbW157W1
+77W9vbW977W99729vb297729973Gxr3G973G/8bGxsbG/87Ozs7O/9bW1tbW/97e3t7e/+fn5+fn
+/+/v7+/v//f39/f3////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gDv4BlI
+cOCdgwgPFiyYMOFCgg0RPjQYUeDEihYfRpyIByNHjxcrfhQZcmNJhxpJpjS5suFIlgtBtkTJUGVM
+mzVh5nR5kuZNnR1xQhRKEWhRnjMl9lTKUIfTp1CjSp1KtarVq1inKrypA4DXr2ABBBg7YECBswcO
+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
+jwSZkAi5kDoREAAAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_dith.gif
+
+R0lGODlhXwBIAPcAAAAAADl7e3sAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAHCCRA
+sCBBgQgRGjSYMOHCgg0VPiQQceDEigMmUmyoEWPHih8jhuR4EWRJhydJPvSYEuVKky9Ftsw402JM
+lQtZ3nSZE2ZPnBB9MhQaVOZOiUdt/gQqoKnTp1CjSp1KtarVq1J5EhQAoKvXr2DDih3rlUBXswDM
+DgCwViDbkVqLDhCAFCJXsnjxrmXLdy9as2rZts2YNq3cuAcT0qU59G7ex2fx/o3cly/gpYg3KmZc
+1DFksmi7trVMGe3otpcvCwZ6WKCAm54/yxZruvJa1a2VDo34erfr2Y/38i0MWPTw0QUNqzWKWWHv
+w7GBfxUu2Tjy4gRXs04s8zn339LB/lInjd24deLKdTa36Z13+Pd7T6PPfrqub57PRUZ/b74w+uOR
+4VaRcutxRkBv3fEnXllixWdceRT1hVpNBh6oGVL7KfhVcebdFmBhRH2H2GL4aTjchtMBOF9abp0G
+l30Fkahbhu+F1t9wkxU3GIwi8kiRjAbSyF9tJ/qF3mB9pZZbhYkBuZCQsk3WII7+BbYjgYapt5uM
+D0HJ32goHinhW8ktORKJK3kp3Xge+geiYHAqeWFmDS32kpp5SenVeDmed5tBWYY451wVIoTnbNS1
+OZl8hCmpZW7efSdAAJRWaumlmGY6gKWbVkoApZ8GsOmoogZgkKmD6rZkpHVm6uqr/qZe2mmsoFLa
+KambfqorQaIyd59zmE0K67DE1hoqqaXmyiuvj/ZoEauKFSvtrbVaGmqypeqKqma9quosY+21Ku2r
+s2Kqra2lpqsts936qF5+HAk7LrGdXhvrrKSu+2lC3b44Y49bzTtsudVWimus6wrULpOpVviaUfIK
+LOul9iI7q7779trrrr96CyRnEUs87LXU0nruqA1t2zHDThoUssjWFoyvsQh3i62/DBOq1csSE2zw
+z+rWjKu7grrGFMyv2ptuvdVmrLCyKjccEpdPIk0xp5mGqjW2KHNsZkpo5sSz1Vgju7XTKEf9LVx2
+9jQ2zMea2zS6+S6ra7OD0hXT/tvjKv3zxdUenJHaeFcU6YV8C1yyp4xzne2y9xZteLBkkxtz3Adj
+LDWFFt6X+LRAFxw43aiWTtHCOZsEraGVu3rtyehma/qcG3O+1a8CFKD77rz37rvvA+gevO4E8D58
+8MgXUPzyxSPvfOrMwetQ7r9XX/3w1jcv/PbLK788QgXQKRSCJFFv/fnnd2/89sq3z3z44Yvvq4UQ
+o2//+r5rD//+3TffUPg4m8jHXHY/+2GveO3DX/D6177kOS+AAmRKASfYu+TtL4HdE0j8iDa/g7Qs
+RhQsIAIV6L4SOg9+zFvZRz64lRD+DoEjhB/2djfCDMpQN94rnNFgZD4XZm99+gskXgIdmDyCeG9t
+YIPRXHxYwBmWsIEyjJ8RC8Q2VbmGiflj3+6CSMPtnXCBSYGeoQp1RSwKsYJZhGEUkTdF9+mwTrAx
+I/q4KET9FfGIQdmgtxq2ujLKkX1OVJ8Xo9hG/3VQan1c4h9/R0co7g+M3suh5LoTrD9iz4lnjCIh
+3WdEDcpPJeFSzCLRmEBHbvJ9mwujy1pzoFFekHcxdGAd3XjDPWqJfCjpIRYDWUoLorCEnUwIAG23
+yvq58oVAnGUwawnBJ0UPK9CMpjSnSZXtpJKKxMSmKmuSTRV282vbDCc4tUlOb4rTnONEpzrTyU4k
+rtOd5WznNc0ZEAAAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_yelthr1.gif
+
+R0lGODdhXwBIAPcAAAAAAAgIABAQABgYACEhACkpADExADk5ADmEhEJCAEKEe0pKAEqEe0qMc1JS
+AFKMc1paAFqUa2NjAGOUa2OcY2trAGucY3NzAHOlWnt7AHulWnutUoQAAISEAIStUoyMAIy1SpSU
+AJS1SpS9QpycAJy9QqWlAKXGOa2tAK3GOa3OMbW1ALXOMb29AL3WKcbGAMbGxsbG/8bWKcbeIc7O
+AM7eIdbWANbnGN7eAN7nGN7vEOfnAOfvEO/vAO/3CPf3APf3CPf/AP//AP//CP//EP//GP//If//
+Kf//Mf//Of//Qv//Sv//Uv//Wv//Y///a///c///e///hP//jP//lP//nP//pf//rf//tf//vf//
+xv//zv//1v//3v//5///7///9///////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBhCBwI
+I4bBgwYJEkSIUOFAhgcdCoSYUCLFGBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAHCChhAlgCBAgUM
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_magthr1.gif
+
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_yel.gif
+
+R0lGODdhXwBIAPcAAAAAAAgIABAQABgYACEhACkpADExADk5ADmEhEJCAEKEe0pKAEqEe0qMc1JS
+AFKMc1paAFqUa2NjAGOUa2OcY2trAGucY3NzAHOlWnt7AHulWnutUoQAAISEAIStUoyMAIy1SpSU
+AJS1SpS9QpycAJy9QqWlAKXGOa2tAK3GOa3OMbW1ALXOMb29AL3WKcbGAMbGxsbG/8bWKcbeIc7O
+AM7eIdbWANbnGN7eAN7nGN7vEOfnAOfvEO/vAO/3CPf3APf3CPf/AP//AP//CP//EP//GP//If//
+Kf//Mf//Of//Qv//Sv//Uv//Wv//Y///a///c///e///hP//jP//lP//nP//pf//rf//tf//vf//
+xv//zv//1v//3v//5///7///9///////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBhCBwI
+I4bBgwYJEkSIUOFAhgcdCoSYUCLFGBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAHCChhAlgCBAgUM
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_mag.gif
+
+R0lGODdhXwBIAPcAAAAAAAgACBAAEBgAGCEAISkAKTEAMTkAOTmEhEIAQkJ7hEoASkpzjEp7hFIA
+UlJzjFoAWlprlGMAY2NjnGNrlGsAa2tjnHMAc3NapXsAe3tSrXtapYQAAIQAhIRSrYwAjIxKtZQA
+lJRCvZRKtZwAnJxCvaUApaU5xq0Ara0xzq05xrUAtbUxzr0Avb0p1sYAxsYh3sYp1sbGxsbG/84A
+zs4h3tYA1tYY594A3t4Q794Y5+cA5+cQ7+8A7+8I9/cA9/cA//cI9/8A//8I//8Q//8Y//8h//8p
+//8x//85//9C//9K//9S//9a//9j//9r//9z//97//+E//+M//+U//+c//+l//+t//+1//+9///G
+///O///W///e///n///v///3////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBlCBwo
+Y4bBgwYJEkSIUOFAhgcdCoSYUCLFGRILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAHCChhAlgCBAgUM
+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
+UPiOFL/THe8KCQgAADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_gra.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OTmEhEJCQkKEhEpKSkqEhFJSUlKM
+jFpaWlqMjGNjY2OUlGtra2uUlHNzc3OcnHt7e3ucnIQAAISEhISlpYyMjIylpZSUlJStrZycnJyt
+raWlpaW1ta2tra21tbW1tbW9vb29vcbGxsbG/87OztbW1t7e3ufn5+/v7/f39///////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBTCByY
+QoXBgwYJEkSIUOFAhgcdCoSYUCJFFRILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjyYoanTp1CjSp1KtarVq1J5ZgDAtatXrgECCBg7oCyBswUK
+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
+fN9IOfi/Bx7wdyPc4AlveLwXXvCIQ9whAQEAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_bla.gif
+
+R0lGODdhXwBIAPcAAAAAAAAICAgICAgQEAgYGBAQEBAhIRApKRgYGBgxMRg5OSEhISFCQiFKSikp
+KSlSUilaWjExMTFjYzFrazk5OTlzczl7e0JCQkKEhEpKSlJSUlpaWmNjY2tra3Nzc3t7e4QAAISE
+hIyMjJSUlJycnKWlpa2trbW1tb29vcbGxsbG/87OztbW1t7e3ufn5+/v7/f39///////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBTCByY
+QoXBgwYJEkSIUOFAhgcdCoSYUCJFFRILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjwIoqnTp1CjSp1KtarVq1J5ggDAtavXr2DDih1LtqzZryCU
+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
+8erEut917nnHu93yXtchAQEAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_whi.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OTmEhEJCQkKEhEpKSkqEhEqMjFJS
+UlKMjFpaWlqUlGNjY2OUlGOcnGtra2ucnHNzc3OlpXt7e3ulpXutrYQAAISEhIStrYyMjIy1tZSU
+lJS1tZS9vZycnJy9vaWlpaXGxq2tra3Gxq3OzrW1tbXOzr29vb3W1sbGxsbG/8bW1sbe3s7Ozs7e
+3tbW1tbn597e3t7n597v7+fn5+fv7+/v7+/39/f39/f/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBfCBz4
+AobBgwYJEkSIUOFAhgcdCoSYUCJFGBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAECCBAwoCwBAgUK
+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
+ADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_thr1.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OTmEhEJCQkKEhEpKSkqEhEqMjFJS
+UlKMjFpaWlqUlGNjY2OUlGOcnGtra2ucnHNzc3OlpXt7e3ulpXutrYQAAISEhIStrYyMjIy1tZSU
+lJS1tZS9vZycnJy9vaWlpaXGxq2tra3Gxq3OzrW1tbXOzr29vb3W1sbGxsbG/8bW1sbe3s7Ozs7e
+3tbW1tbn597e3t7n597v7+fn5+fv7+/v7+/39/f39/f/////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBfCBz4
+AobBgwYJEkSIUOFAhgcdCoSYUCJFGBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAECCBAwoCwBAgUK
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_thr128.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OTmEhEJCQkKEhEpKSkqEhEqMjFJS
+UlKMjFpaWlqUlGNjY2OUlGOcnGtra2ucnHNzc3OlpXt7e3ulpXutrYQAAIStrYy1tZS1tZS9vZy9
+vcbGxsbG////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBFCBwo
+YoTBgwYJEkSIUOFAhgcdCoSYUCLFERILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjzIoanTp1CjSp1KtarVq1J5cgDAtatXAAECCBAwoCwBAgUK
+GDBw4ECCBAsWOHAAAYIECRUqXLiQIYPGoDR/KoXIYbDBrV+/hh1rFq1atm7fyp1r927evX2LGhYs
+tGHhzogTd11MdsBZtGvZvoUrt27ly3wzrJw4+2/Nz4FDiwYrtvTZtGrbuo07ua5lvbEB01Zu+yfu
+5iN0iybdGDXk1ZPp3sWLPDPnwEc3/ofHPVJ6YuqmHQdvK7m1ce6YZYfvPB98UhGfW5pX3Lv6Y+Gs
+Ffdad/JhpJOBSCE4UGEx7ecVer+ldZ1kc2l3XHz32acgfRniN5ODo/WXnnUAskbXe7BlBtNQHG64
+IIsgcgWhepANFxdlA8a34nfLsfgQBzDuFiJjI/4XGVwVVgZfbAfuWB9tQHIWI29ERrheZDe6diGT
+4nUInZdMfTfljCSyRxyOW/bVpYs98mhblC5GJ6SMIlo5IZKUbZeiXxo6CSZCUZo0Zp2/rVViligS
+2GeTOAEp06BV0gjgmSemyadmLfr5XI+Q+lbondkpueeXbJLqZ3SbddoYcDW2d2KO/snVhmmfmzKk
+apGGmnljpUt652ObT5qKX6pzUukpq+xRmKelzM0K7E7PEYaAAtNWS60C2DLAQAMPdBtBBBNMQIEF
+5GKAgQbodqCuB+x+8EEI8P4qbIIEkfcSB9Neq2++2nLrLbjikmuBuehqoG4H7HrgLrwhuOnsvALl
+d1u+FGPLLwMPYPwtwOOWe26667b7brx/NrsSgz3hu6++2W7b7QPfhtvxwB8bHLLCIzdc6sPOwjle
+xRW37C/MHAtMMMgIi8zwzrLW5vOGKq+sb78vgwvuzEfbnDTODJ/qtUVPK6Ry0PkqQPW/Mhtd88EJ
+Lwwvo/SCFHa9QLNstsveTnC1/toFs63022t+/aiYZFssdNVFe9z3zW6HEDjchsHJ0diGs3w2zHoH
+rDjSbeecKeSgZXhY3WXfPXTMmtO8+NaNLxq3UY4OFnXhpledOdZrM+45xJ8jtemb1kpdO9qpZ+03
+12/z3DRhqZKO7eF577251p0vvby8HdUKKO0Xn5646pz/rTP219+kPVPBBz085tKDT734JsefMn2z
+X1v65ajjvnr1JAer/IfgwQ/3oMe+4uWOdTlzWPnmIzHzpa9y68sf38KHvPEJ7nH1gs6CnPc8/N1u
+gu+rYMnIp5ynKYgDJEihClfIwha68IUtZJr83DS3BcHwhjjM4QV7R5QaRiyH3UAMogpB5zql+BA/
+QkwiDl+HQdmJSYlQdGETeSgUyfUwilgcYhGpmBvRRSeLWdyiGIEVO6CgEIxRfJYMSQgoraAxjf9j
+YxtB80YoxlGB5UlVHZW4wBGaT497FOIM/VeSaNkqkILEoxzHE8AzIjKHiowkA4H1w0dC0o+EBAzK
+nGPJS+5wjCasVydxuEZJeumIjhylFImoRo+gUpUwZCXvUPJKWK6Si60Uic8cgpVe+vKXwKxKfe6Y
+yUVi8phx6mMpi2nKZXpxkMj8ZC6ZOM0pjnGW1eQiMaMpy22yKSAAADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_thr255.gif
+
+R0lGODlhXwBIAPcAAAAAAEKEhIQAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAHCBxA
+oKDBggMTEjxoUOFAhg0dLoQocSLDihARKsxIAGNGjxQlcgR5UeTHjScdjjQZUmVKlC1hlky40mVM
+mi9x3nyYk+fOmjIPkhTKcmbQiDaN+iwooKnTp1CjSp1KtarVq1KDCgDAtavXnQKB6lS6lGhSswLG
+MvXKFgDZsD3hgrVo9qhGgWnlNtzatmtdtUjtdiz6t2zgAXlD8u3r9q7goYcNOwY8GTHdwYgZc62s
+t3DnyJ85X+YsIObivpgfEwY9OjVl1wNL/z3dFrJosZJhh9ZNUPZh2mxX347b2jZvpkqBez3LGvdu
+4yB9w1beVTXz4XOdW/StkjrX19CF/h8nzlC2S+8Acoe/Pj57edgG0T8Xv9663bxj5WvfT74/RPyd
+ocefewS+VRyAdAlYoGfF0ecgguVp1hiDAxpYIVqAKdicfxZyWBd+FGnYXocLbnhTYiVpWB94DrLn
+UFotCRDAjDTWiB2JOFIYl3SOyVjjjyPqWOKNDPKokI8/0riiei3aR5ORCSGZZABNsuhilTxBGduU
+SjrJ5JVgwiTdi1zO6OV8YVopE3cbSZmkmnB+eWaClTFVJpVoznmhifHBZ2eZecYZqJyUIbjdnQ2m
+Seiiu0F4kJtAesinkDnupdWdkhI56aYaORofppVqKmqQSAH4H6ickjpqfSBeBKmN/qkuOWigKBL1
+Ko2xYjlrorFdtmWZq+rKq6A8pnbrjKomK+uwsSWHqLB7Btuds4Aqumu042mJVwHcduuttcxe69+Y
+R3prbgF6ZqpsUWw+ee63jIYr74XmoSTAu93Gi+2y//lJwL34ojuvuvz+lxTA+A485LrsecpUwAXs
+Cy3BDv8LMcETL4yXVheHynC6MWbYca7gSrzxZ4iN/LGgCieHcsoBkwyyxy/6um3MK+uL8ZGmXVyw
+xsJqC3PCGdMMrdAIv1s0pUxviDTEJe8MMrlRQs2yyTO3+1DS514ttdd9+sm1uToDHfWj/mKl9tps
+t13V2UbD3XSdX5cd95l1i2v2DszS8i0z2H/bPXfOcAUEADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_no.gif
+
+R0lGODlhXwBIAPcAAAAAAEKEhIQAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAJCBwo
+cIDBgwYJEkSIUOFAhgcdFoQ4QCIBihUlUtS4kSNEixhBdnQY0iNDkiMVlkT50WRDlxFhJlSZcmHN
+hzcntmR5UmZGmztpBgXak+dLozGRzrQpoKnTp1CjSp1KtarVq1J/4hwgAIDXr2DDih1LtqzZs2jD
+CuDZNa3bt3Djjl1LlKvcu3jzqhVqsK3ev4DR0t3aN7Dhw3sJF0bMOPDgj34bS75Lt2XkyZjdrt15
+ObPnsgKCdv5MGmzoowJHly59Omnq1bBNF30dO3ZrrbRrr25NUrXuyadR+v7dODTL4cQRDyaMPLnh
+5RcRNncOGDrD6dT1WpceoLv37+DD/osfT768+fPgl0MUgL69+/fwxz8+yT6+/fv4v1fuWT+////n
+bVZUfwAWaGB3ty1FAIEHNphfggox6OCE8EFIkIQUZhjgbAtq6GF7tzmE4YckesebSiOWSGJwNKWo
+oofGCeXiixlCF11fNOa43UEz5ujgjjj6qCKQXAk5ZF1FGrmiYhX1qCSA+73k5JP+CXiUAAVkqeWW
+XHbp5ZdghinmmFwmqBWWZKap5ppsemnhQGi2KeecdGr5Zmp15qlnmncuuOefgJaJGp6BFrrniQvF
+aeiicrLIFKOQthkjUIpGammYNkp36aaY8sUVp6B2SWSloXI6aqmoqncdqqXO1xCpaaxGGmVMsMbK
+qJVJ1WqroWZeuOumfer6K6DBDmtpsFglq+yyzFI16I0cMqkgktNKi5u1Ig0F7bM6Rdstt9u6Ru21
+34obbrXlonsuuetm6227npqbLrsrxatuveMqRW9O8OrrLrj4EhAQAAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_1trns.gif
+
+R0lGODdhXwBIAPcAAAAAACEhITExMTk5OUJCQkpKSkqMjFJSUlKMjFpaWlqUlGNjY2OUlGtra2uU
+lGucnHNzc3OcnHt7e3ucnHulpYSEhISlpYwAAIyMjIytrZSUlJStrZS1tZycnJy1taWlpaW9va2t
+ra29va3GxrW1tbXGxr29vb3OzsbGxsbG/8bOzsbW1s7Ozs7W1s7e3tbW1tbe3tbn597e3t7n5+fn
+5+fv7+/v7+/39/f39/f/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBRCByI
+IoXBgwYJEkSIUOFAhgcdCoSYUCLFFBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjx4oanTp1CjSp1KtarVq1J5XgDAtavXAAIGEChwIMGCBQ0g
+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
+GMEFNm9AAAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_oprbug.gif
+
+R0lGODdhXwBIAPcAAAAAACEhITExMTk5OUpKSkqMjFJSUlKMjFpaWlqUlGNjY2OUlGtra2uUlGuc
+nHNzc3OcnHt7e3ucnHulpYSEhISlpYwAAIyMjIytrZSUlJStrZS1tZycnJy1taWlpaW9va2tra29
+va3GxrW1tbXGxr29vb3OzsbGxsbG/8bOzsbW1s7Ozs7W1s7e3tbW1tbe3tbn597e3t7n5+fn5+fv
+7+/v7+/39/f39/f/////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBRCByI
+4oTBgwYJEkSIUOFAhgcdCoSYUCLFExILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjxooanTp1CjSp1KtarVq1J5WgDAtavXAAIGnCBgAIECBQwe
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_16ns.gif
+
+R0lGODdhXwBIAPcAAAAAAAgAABAAABgAACEAACkAADEAADkAAEIAAEJ7e0KEhEoAAEpzc0p7e1IA
+AFJzc1oAAFpra2MAAGNjY2Nra2sAAGtjY3MAAHNaWnsAAHtSUntaWoQAAIRSUowAAIxKSpQAAJRC
+QpRKSpwAAJxCQqUAAKU5Oa0AAK0xMa05ObUAALUxMb0AAL0pKcYAAMYhIcYpKcbGxsbG/84AAM4h
+IdYAANYYGN4AAN4QEN4YGOcAAOcQEO8AAO8ICPcAAPcICP8AAP8A//8ICP8QEP8YGP8hIf8pKf8x
+Mf85Of9CQv9KSv9SUv9aWv9jY/9ra/9zc/97e/+EhP+MjP+UlP+cnP+lpf+trf+1tf+9vf/Gxv/O
+zv/W1v/e3v/n5//v7//39///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gBjCBwo
+UIbBgwYJEkSIUOFAhgcdFoQoQ2IMihUlUtS4kSNEixhBdnQY0iNDkiMVlkT50WRDlxFhJlSZcmHN
+hzcntmR5UmZGmztpBgXak+dLozGRzrTJIUPTp06jQp0qtSrVq1azYt2qVepPnDIyABhLtiyAAAEE
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgb8_t_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAIAAADVpMCUAAAABnRSTlMAPwCAAIBBWrBmAAAABmJL
+R0QA/wAAAP8eJZN+AAAAjElEQVR4nO3Y0Q2EMBADUYPSF1AZS2WUxpXhk2ZeA95R/rJN0FaSqV5w
+TG3/mtlb23/Cfjb72exns5/Nfjb72exns5/NfraV5Oz9wCX5itu+v/1s9rPZz2Y/m/1s9rPZz2Y/
+m/1sK8l738ULzucprtPf3342+9nsZ7OfzX42+9nsZ7OfzX62bdoXdP0AtLEJvwope7oAAAAASUVO
+RK5CYII=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgb8_t.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAIAAADVpMCUAAAABnRSTlMAPwCAAIBBWrBmAAAAjElE
+QVR4nO3Y0Q2EMBADUYPSF1AZS2WUxpXhk2ZeA95R/rJN0FaSqV5wTG3/mtlb23/Cfjb72exns5/N
+fjb72exns5/NfraV5Oz9wCX5itu+v/1s9rPZz2Y/m/1s9rPZz2Y/m/1sK8l738ULzucprtPf3342
++9nsZ7OfzX42+9nsZ7OfzX62bdoXdP0AtLEJvwope7oAAAAASUVORK5CYII=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgb16_t_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAIAAACFNBzXAAAABnRSTlNAP4A/gD8NBINKAAAABmJL
+R0T//wAA//9pxcXAAAAA5UlEQVR4nO3dsW1DMRQEQcpwYVRloiqzVdl3YNWgF+xMwvSABTMCvJ2z
+yPr+P87v2muPLhmzr3Oda3rFp+37eZ3X1/QMJsmfJn+a/Gnyp8mfJn+a/Gnyp8mfJn+a/Gnyp8mf
+Jn+a/Gnyp8mfJn/a+63fXmed0SFMcPvT5E+TP03+NPnT5E+TP03+NPnT5E+TP03+NPnT5E+TP03+
+NPnT5E+TP+391u9nPdZjdsmY+3qu5/SIIW5/mvxp8qfJnyZ/mvxp8qfJnyZ/mvxp8qfJnyZ/mvxp
+8qfJnyZ/mvxp8qfdfOFc9geXFQ/BTRSu2wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/rgb16_t.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAIAAACFNBzXAAAABnRSTlNAP4A/gD8NBINKAAAA5UlE
+QVR4nO3dsW1DMRQEQcpwYVRloiqzVdl3YNWgF+xMwvSABTMCvJ2zyPr+P87v2muPLhmzr3Oda3rF
+p+37eZ3X1/QMJsmfJn+a/Gnyp8mfJn+a/Gnyp8mfJn+a/Gnyp8mfJn+a/Gnyp8mfJn/a+63fXmed
+0SFMcPvT5E+TP03+NPnT5E+TP03+NPnT5E+TP03+NPnT5E+TP03+NPnT5E+TP+391u9nPdZjdsmY
++3qu5/SIIW5/mvxp8qfJnyZ/mvxp8qfJnyZ/mvxp8qfJnyZ/mvxp8qfJnyZ/mvxp8qfdfOFc9geX
+FQ/BTRSu2wAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_ok.gif
+
+R0lGODdhXwBIAPcAAAAAAEKEhIQAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAHDCBA
+sCBBgQgRGjSYMOHCgg0VPiQQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EhTAtKnTp1CjSp1KtarVqEMhCgDAtavXr2DDigXb0+ZOs2UF
+Cij6c+vYt3Dh/kQ7F+dZhGtruo3Lty+Agz4B0xWcUMDNvX4Ti8U4mLHdtIXvDkCsuHLXoJKzQlZo
+GDJly5UDO1ZaF2Xn0p9BJ26MeXPR06Mnq1b9uLRm22xPb0w9my9pwr9jsyXQ2STv3nBvA1cu/GhB
+wzaPIx87HLdz19eXmpU+PWz25dXB/n8n/ph7969JmbfWWv6835nhm3Ncq9S8e65I4Y/HS9r+/czx
+rUcYfdnJdl9c2KUXYGHVqXUgguIpuF9DeZ3ln3sR6qcgbAM+KJeA8unHIYUBlGjiiSimqOKKKYLo
+YkYjFsbijDTWKNqLxkkmQI089mgiazeKBFtEO/po5Iy1ZZjfUrYRd+STKgaHY3nLLQXllT8uCCRd
+0OFUJJZQaplkiAsRmNWXYB454ZZjmnkdmmn6KOGcHrlZZpxPaqjnS3YaBCeeNS4J4JpmPvQnoDMO
+Sudht02GqJzWLapjg44+ymOke2ZWYVmHWpqikorCx6FjnXp6IpmhGhUjXqbSOKWU/jDq2CqSbMKa
+o2ezslirekJuVuqsY756ZpMCFGDsscgmq+yyzCpra7A8FcdSsc1Wa621vO5aXZcuUXvtt+AWIOaz
+v7npnLfhpsvsmtA21udz6sa7rKQJ1lmevPgem2m9fN6bL76C8mthf/8CLPDBdRE4EroFh4swqJ5R
+ynDD32IasG2bzjUxxdZCbDGAoxbGcbqoPtzcqmqNHK6w43Kmo8rgBqktSChPBvO3My86JIU3X9vu
+zzrpptLGPSNLbrZUxrZU0dUiffS2Si/N9LrsPv2duX5OvS69H/tZ3lVghy322FMlyXLVTqfdMqU5
+79v12x6fzbXHdJdsd91yux23CcxAq4322s4FBAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_yel.gif
+
+R0lGODdhXwBIAPcAAAAAAEKEhIQAAMbGxsbG////AP//////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAJCBxI
+YIDBgwYJEkSIUOFAhgcdCoSYUCLFARILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjwooKnTp1CjSp1KtarVq1J5CgDAtavXr2DDigVboKzZs2jT
+ql2LVoBSpmPjyp3Ltq5du26FDtg6t69frncDCy6bl+bev4jlDl5ct7BGhHwTS/7KuHLawiMjT95s
+uTPhiTU1b5bsubPbmKJHIy5tWcDM1Kr9sq7s+qdA2LHpzl5c++jt3KR3D+6dlABu4GOFD7f9G/lf
+5YJ7czzunCz0u7VNUq/u9Tp2jG+3/nMH7L2x1vG6y691/Nig+PHq2bJn+J57/PVv3aNXfP+y3r0B
+BCjggAQWaOCBBfbnH2gNCYDggxBGqGBbDObkYIQYZhjghGed1tOFGoaIIIdmEZcUiCKmOCCJhA1l
+nIowCshiASYqhGKMIs5YI0E34qihjsy96GOKQBZXUI9DSshidkohmeSDQMrk5JMH6qgVlT8umR+A
+WGJopV5TdrmilmCKqSSJjkEUppkBfNleQmua+WVLcYppJWpsQrnkawb06eefgAYq6KCBFumbcYQm
+quiihhYnwKKQRupno+AN9KikmCbaqEOXZuopoIZO9+mok+5ZKUqdkupplOGpOqqbiTSl6qqksL4p
+66yQ1kofrpnqChmvmMKqJrC0kvkmRrcSO+icoSmbq5aoOcuoqbYlK+2flNp4rabUOrotodny+O2y
+3XKK1bnopqsuVYcea2SFQcLbrrzvunvqf0YWteW89sLkomH86kvvvQDXK3DBBA/sb5AHK6xTwv0+
+vHC7DUeMFMQVZ7wSAQEBADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_mag.gif
+
+R0lGODdhXwBIAPcAAAAAAEKEhIQAAMbGxsbG//8A////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAJCBxI
+YIDBgwYJEkSIUOFAhgcdCoSYUCLFARILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjwooKnTp1CjSp1KtarVq1J5CgDAtavXr2DDigVboKzZs2jT
+ql2LVoBSpmPjyp3Ltq5du26FDtg6t69frncDCy6bl+bev4jlDl5ct7BGhHwTS/7KuHLawiMjT95s
+uTPhiTU1b5bsubPbmKJHIy5tWcDM1Kr9sq7s+qdA2LHpzl5c++jt3KR3D+6dlABu4GOFD7f9G/lf
+5YJ7czzunCz0u7VNUq/u9Tp2jG+3/nMH7L2x1vG6y691/Nig+PHq2bJn+J57/PVv3aNXfP+y3r0B
+BCjggAQWaOCBBfbnH2gNCYDggxBGqGBbDObkYIQYZhjghGed1tOFGoaIIIdmEZcUiCKmOCCJhA1l
+nIowCshiASYqhGKMIs5YI0E34qihjsy96GOKQBZXUI9DSshidkohmeSDQMrk5JMH6qgVlT8umR+A
+WGJopV5TdrmilmCKqSSJjkEUppkBfNleQmua+WVLcYppJWpsQrnkawb06eefgAYq6KCBFumbcYQm
+quiihhYnwKKQRupno+AN9KikmCbaqEOXZuopoIZO9+mok+5ZKUqdkupplOGpOqqbiTSl6qqksL4p
+66yQ1kofrpnqChmvmMKqJrC0kvkmRrcSO+icoSmbq5aoOcuoqbYlK+2flNp4rabUOrotodny+O2y
+3XKK1bnopqsuVYcea2SFQcLbrrzvunvqf0YWteW89sLkomH86kvvvQDXK3DBBA/sb5AHK6xTwv0+
+vHC7DUeMFMQVZ7wSAQEBADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_bla.gif
+
+R0lGODdhXwBIAPcAAAAAAEqMjIwAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAHDCBA
+sCBBgQgRGjSYMOHCgg0VPiQQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EhTAtKnTp1CjSp1KtarVqEMhCgDAtavXr2DDih1LtqzZrwKK
+/tx6tq3bt3DDpq3JNq7du3i7CrhZN6/fv2X39kTYF7DhwwAE/ySMuLFhxQcTFnZMGS7kiJMrazar
+eGPmzaDlRkb5ObRprnttlj4dOi1OAqtZb3adFbbs26hf28Ytm7ba3bxP+34YOzhi2iOLG3/8G6Py
+5X/n7hzwHHpeyKOpWweNvaGAAODD/osfT768efK3u0s+z769+/TTBX53T78+ePiLCdvf3x4/Rofz
+8SfgePiZFOCACMKnGoIMBpCeTbA1mGBvuh0ooX0PKmXhhfRlWNuGHPZHYW0RhojhiEdpZeKJrLn2
+EogrlvcgXTF22BtfNb5342Dy5Shii/FR5yN7/mUn5JDmFYkZkknu+J9CAhQg5ZRUVmnllVhaWSBL
+UWbp5ZdfKohTl2CWaWYBHmZF5plsYplmirC1KeeVby605pxz1mnQnXi2mSZxffbpYXKB4pnhi4Xm
+SSFdicpZZHZ8Nhqmk0ZGKmmWj3p36ZmZSrapmUpq+imY/nk2Kqk7GnjqpECqtqqXTm+maOmraKL4
+21W45qrrrlTpZiSJvzYXLJz5KVUssE8aG1SQyC7Lo7HDJkWis8cKm2yzPkU7U3PUaovUtsR6yyy3
+2V5rbbfmhpuutGoFBAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_whi.gif
+
+R0lGODdhXwBIAPcAAAAAAEqMjIwAAMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAHDCBA
+sCBBgQgRGjSYMOHCgg0VPiQQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EhTAtKnTp1CjSp1KtarVqEMhCgDAtavXr2DDigVboKzZs2jT
+ql2LVkDRn1vHyp07l63du3fd1oxLt69fAHgDCy4r4Cbfv4jFDl5st3BPhIcTS+7KuHJaxz8hT95M
+2bLnApgPJozMGfFnz6Ejki7t97RlzBtXs6brurJjk7Jny63NuLDN3LoV8x7sFicB4MHJDhdcPOvx
+5H+XMzf+HHpf6YGbv61uvS72vEq5/ncf+x38dorIx5dvfF5g+u7r2erdOeC99fhrQ4t2P947/rb0
+uRfAgAQWaOCBCCZ44H+XBVifghBGKCGDAD4moIQYZjgghWel1pAAGoYYIYdmwaYSiCKmuCCJoO0n
+EYoqxhgAiy3+JqOMNGr3Fow3ipgjdTz2qOGPSgUpJIZEOmfkkSOyqN1DSzKpYJIjRSklgkS+ZOWV
+Bv64F5dIOmkYmBOKaeGDZEKYo4NbprnmmW2S+aaLF6aZ4Jyx0ajnbSwJoOeav/3ppE3HCUqijgv5
+aSiFiBqk6KL/NVrQo5DG92SilUbqHHqZ4leclp1aelRmlIYqnX4YuWdqefp9uOp3bK2O9ip2sUI2
+66ln1nfrciY6VOqun/GJ0q/AvpbqUMQW2xuhySpLHJBXRSvttNRORR2dm2J7nraj5rrtseFxi9RM
+3wblYLbgomuuuOR2m9m17I4r77vhpluuT/Geey+h+Xrrbr/0qouvvaMGBAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_no.gif
+
+R0lGODdhXwBIAPcAAAAAADmEhEKEhIQAAMbGxsbG////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gALFCBA
+sCBBgQgRGjSYMOHCgg0VPiQQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EhzAtKnTp1CjSp1KtarVqEMhDgDAtavXr2DDigUbIICAsmfN
+ol2rtm3at2zhBhhQ9OfWsXjz5hVwlq/ZvoD/CvZLOHDhv3Rr3tXLuDGAvoPVEo5smDLlATcXO94s
+tvLhyZ8pG+6LuSdCzZxTdx1t+TPr0H5L/zytuvZqya89D4YMGrLsgwlR296suzdu0bt3/44ofHjj
+3Mlh80YuQPbG5s718va8/bhry6VN/mLPjrd499fRk2O2OZ585+jQjZ8fTBcngfbuwZ6fLz8+Yvv3
+5eeYeelJ551vAOIn4G3f9VfgfnMluCBjEPrnYG/11bXUhNq1xp+FlWU4koITxvehdx5GeJRdHO51
+4IvywUffisAVQOKCBF6IHoaZtViejAbGKN9vGJ0GpIlHApmijkoS2dAAgPEVZWFS/lWllFRmCSN3
+1FF3lpPBWSkmlbhtZ2aZSgrJ5ZrLPRnlmFpiOeWccHbZYJKgWafSAHVeSeafY8KJJGh2QhgeS1AK
+qqifb8rZp5dbRhrYejjxyeiif2K525R2Puhpnjbd12imo45WKp5rFjqjUpaSiimn/pf6KRmqkBqX
+oYaJxuqqrLpaqCps6iX46rCa9ornr/7d+lCuuzZL7JqDoohhVge1eqqxxTqbY63x1fcSs9dqKy6t
+ar6Y2E42PhtuszueeOeQma377LxB/tokugJZq66g8hLaYLuQgnlav+KGm6a7AFeHb7rYskvwp51e
+OJdpA++rK70VRuugng4NYMDHIIcs8sgklzyyu8gWaNahKHls8ssww3zwzBdS6pLLMeesswHQLpnx
+qjrhvPPQJcNYK8SA3Uqj0EQ3DXLP9QZJWoJOVw2y0VJzq5bSCzFt9dBQ0/yhsl1/XTXWqfo7n4gx
+eW12zmH/i6q3O7n9tswJ84d0pISK3U103L42SGSRNvo9NNopGyhwvobvDPinFS5eeOM5I14uypLb
+TbnIj8utOMWMb4435NKSrnCNCmku+sed7/ggyxKpvrrlCN/L3uovt370tPbJLjrt0k4XI9cGXWX8
+8cgnTxWAqCs1G/PNU/u889FrOL30QS0sffU0Xm8990lh7xP4M31POPXnb5++9dmDrn773ndPPlLa
+mw///PXLv77+2QcEADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_bug.gif
+
+R0lGODdhXwBIAPcAAAAAAIQAAMbGxsbG////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAFCBhA
+sCBBgQgRGjSYMOHCgg0VPhwQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EgzAtKnTp1CjSp1KtarVqEMhBgDAtavXr2DDigXb0+ZOs2UF
+Bij6c+vYt3Dh/kQ7F+dZhGtruo3Lty+Agz4B0xWcMMDNvX4Ti8U4mLHdtIXvCkCsuHLXoJKzQlZo
+GDJly5UDO1ZaF2Xn0p9BJ26MeXPR06Mnq1b9uLRm22xPb0w9my9pwr9jsx3Q2STv3nBvA1cu/GhB
+wzaPIx87HLdz19eXmpU+PWz25dXB/n8n/ph7969JmbfWWv6835nhm3Ncq9S8e65I4Y/HS9r+/czx
+rUcYfdnJdl9c2KUXYGHVqXUgguIpuF9DeZ3ln3sR6qcgbAM+KJeA8unHIYULsiYaiChmNCKDErao
+4Yv5rYiXi/nVCOCE0W3GYYY2JgjjjQbpptKOKZpoZG08LrWckj72aB2NQC4EHU6wFYlkiE4m+dx2
+T/7YZJRZklefll2GaWVwk5WHJZhsfulmW+Wdqd6JdBpJYHZ3znkkmnVeyWCDeeLoZ5987knfS3lC
++SaZjMZWYVl3Klpmm5O6RiR/JQ66p56aUijZoV5WKmqjJMmolqCFdprqqhKZOpmk7KQSyqlLVXpq
+pqyZspqbbcQR4OuvwAYr7LDECqsrqpoVx1IAxTbr7LOzRlvdlLQ+a+21v+Yq7XeBBontt84iq218
+iXoL7rnCwromQ+U+h+67v4Yaa7tLwQvvrXb2Z++7lMZ6KqD7orvouqg1OFnA545K8HKPzsUswt/6
+q6pah0EcsZzjvuqZxdhiLO5Arj7MMbSbZswkaiNbW/LHz+mYMsnbQimkQyK/TOyxiiprms3Nxhwq
+tUPVzHOwJsvbrbtDD8uyvGIme9XTUEct9VRIeqyu1aFije/ERQ+sdb8LE/y117guTfbKV5dtUEAA
+ADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultb_moz2.gif
+
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray8a_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAQAAADwz59IAAAAAmJLR0QAUMHmcsYAAACCSURBVHic
+7doxCoAwEAXRjeTervdW4gFUsHCIC/PSpRp+F0jLEUX0iLy7P2Kfei5yLPAUHzKVYCrBVIKpBFMJ
+phJMJZhKMJXw9Lb6oUKrmkowlWAqwVSCqQRTCaYSTCWYSugR6+yGV7ZKq5pKMJVgKsFUgqkEUwmm
+EkwlmEpodb4vntvhRf9zkfDAAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray8a.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAQAAADwz59IAAAAgklEQVR4nO3aMQqAMBAF0Y3k3q73
+VuIBVLBwiAvz0qUafhdIyxFF9Ii8uz9in3oucizwFB8ylWAqwVSCqQRTCaYSTCWYSjCV8PS2+qFC
+q5pKMJVgKsFUgqkEUwmmEkwlmEroEevshle2SquaSjCVYCrBVIKpBFMJphJMJZhKaHW+L57b4UX/
+c5HwwAAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray16a_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAQAAACgX0MLAAAAAmJLR0RQYF2EHz4AAADHSURBVHic
+7dwxDsIwEADBC8q/Cf8GmSeQSNmKGcndVavrLHs7Zq3hVvvMzHF6/LPNvOd/z2/HrPU4NcklogZE
+DYgaEDUgakDUgKgBUQOiBkQNiBoQNSBqQNSAqAFRA6IGRA1cvKPiDJsaEDUgakDUgKgBUQOiBkQN
+iBoQNSBqQNSAqAFRA6IGRA2IGhA1IGpgn5l5ep52m9dmUxOiBkQNiBoQNSBqQNSAqAFRA6IGRA2I
+GhA1IGpA1ICoAVEDogZEDWw+ULzfF2GcSf1fAknBAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray16a.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAQAAACgX0MLAAAAx0lEQVR4nO3cMQ7CMBAAwQvKvwn/
+BpknkEjZihnJ3VWr6yx7O2at4Vb7zMxxevyzzbznf89vx6z1ODXJJaIGRA2IGhA1IGpA1ICoAVED
+ogZEDYgaEDUgakDUgKgBUQOiBkQNXLyj4gybGhA1IGpA1ICoAVEDogZEDYgaEDUgakDUgKgBUQOi
+BkQNiBoQNSBqYJ+ZeXqedpvXZlMTogZEDYgaEDUgakDUgKgBUQOiBkQNiBoQNSBqQNSAqAFRA6IG
+RA1sPlC83xdhnEn9XwJJwQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultga.gif
+
+R0lGODdhXwBIAPcAAAAAAAICAgUFBQUFBwgICAgICwsLCwsLDw4ODg4OExERERERFxQUFBQUGxgY
+GBsbGxgYHx4eHhsbIx4eJyEhISQkJCcnJyEhKyQkLyoqKi0tLScnMyoqNy0tOzAwMDQ0NDc3NzAw
+Pzo6Oj09PTQ0Qzc3Rzo6Sz09T0FBQUZGRklJSUxMTE9PT0BAU0NDV0ZGW0lJX1NTU1ZWVllZWVxc
+XF9fX0xMY09PZ1NTa1ZWb1lZc1xcd19fe2JiYmVlZWhoaGtra29vb2Jif3JycnV1dXh4eHt7e35+
+fmVlg2hoh2tri29vj3Jyk3V1l3h4m3t7n35+o4CAgIGBg4ODg4ODhYSEhISEh4aGhoWFiYaGi4eH
+jYiIiIqKioiIj4yMjI6OjomJkYqKk4uLlYyMl46OmY+Pm5CQkJKSkpSUlJaWlpCQnZGRn5iYmJqa
+mpycnJ6enoGBp4SEq4eHr4qKs46Ot5KSoZOTo5SUpZWVp5aWqZeXq5iYrZqar5GRu5SUv5ubsZyc
+s52dtZ6et5+fuaCgoKKioqWlpaampqioqKqqqqysrK6urqCgu6GhvaKiv7CwsLKysrS0tLa2tri4
+uLu7u7y8vL6+vpeXw5qax52dy6OjwaWlw6amxaenx6Cgz6ioyampy6qqzaurz6Oj06am16ys0a2t
+066u1aqq262t37Cw17Gx2bKy27Oz3bS037Cw47Oz57W14ba247e35ba267i457m56bu767m577y8
+7b2977y8876+8b+/87+/98DAwMLCwsTExMbGxsjIyMrKyszMzM7OztDQ0NLS0tTU1NbW1tjY2Nra
+2tzc3N7e3sDA9cHB98LC+cLC+8TE/cbG/8jI/8rK/8zM/87O/9DQ/9LS/9TU/9bW/9jY/9ra/9zc
+/97e/+Dg4OLi4uTk5Obm5ujo6Orq6uzs7O7u7uDg/+Li/+Tk/+bm/+jo/+rq/+zs/+7u//Dw8PLy
+8vT09Pb29vDw//Ly//T0//b2//j4+Pr6+vj4//r6//z8/Pz8//7+/iwAAAAAXwBIAAAI/gCFCRwo
+kJrBgwYJEkSIUOFAhgcdFoRITaIwihUlUtS4kSNEixhBdnQY0iNDkiMVlkT50WRDlxFhJlSZcmHN
+hzcntmR5UmZGmztpBgXak+dLozGRzrQZpanTp1CjSp1KtarVq1J/4qQWBYDXr2ADCChwIMGCBhAk
+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
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultg_lgr.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OUJCQkpKSlJSUlpaWmNjY2tra3Nz
+c3t7e4SEhIyMjJSUlJycnKWlpa2trbW1tb29vcbGxsbG/87OztbW1t7e3ufn5+/v7/f39///////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAxCMSQ
+oaDBggMTEjxoUOFAhg0dLoQocSLDihARKsyYAWNGjxQlcgR5UeTHjScdjjQZUmVKlC1hlky40mVM
+mi9x3nyYk+fOmjIPkhTKcmbQiDaN+iwI4UHTp06jQp0qtSrVq1azYt2qVWrQBwDCih0LIIBZAWgH
+DCDAtoBbA3APHEBAF0GCBAryLljAoG+Dvw4CP3AKoXCECBIST5hAoXGFxxYiX5hMufIFCDoNQiDL
+2WwAtALUsm1bAK4BuXXv4tXLty8DwIIJQziMWDHjxhQgS76Agbfv3peXIgTLeaxn0KJJl447N/Xq
+BQpav4btYHBhw7UnSLidW7cFysDB/ge3qHFzcbHH064d/fb0aeero0ufLrj6ddqJt3Pvvrty7/CY
+tUTceWWdpR577Z3WHF13sSbdXw0EVp1ss2W3GG6PVRDZd75NBlxvEMRkHoHphbYeacwtqFpe8rlG
+34Sy4Wcbbvxx6KF/k4VI1EADnldicgS4tZyCddn1XHSuQSihdfdltx2G3uEYHgYPKDWijwaaOFqQ
+yx3wHoMNsuYibA/Yh11t+tGom3g4XqZUj8X9eKKQpqHmnINJUsckdrZxl+GGUoJXJVIDXRlnlkBy
+mSJ8LO41ZoQwNonmhVD2F96NbmpEE5ydITpngnaCqReSfulJ4WGKPelYlOJNOahL/oZ2+tmBCMb1
+pZHxOZpnfTGiOmOlNl7aYYg2cUqWnAgOGaqReJYK6YTXVdgnlBr295ugScV6rKdbtieXimG2uGuk
+Z+ZH6aqWWgYcZpllYKxx3CpX54LMRkfqdM/uKe12qnZXrY3XevhAUNrCO6uWtboHbq7zkWlmhZPu
+tyambLIr3LvoxculsvSGudeDpkbr62J+snqjq+1mUHDGByfqbagrijnuYL1GrGa1bFYsXEcYh4Ws
+vMwV6fG9SsYmspMl/xuowAKFtLLPGiuqMKMyl8qrpOZKjDPFmAY4U1dTRTsbxLShmR+/JKdNI4a5
++QvZv4AC3KqgIoJN4X1kI6b3/tloq83Yfo65/faGcatreKaEUsnVU2JHkPfefGuX9oWAB57hn3BL
+JvfJdO8o0OJ3G/a4BGanOjnla7d9+eCEfye3sOtaaTfjeJeNaul9k0zB36lXILiGmbtuGecCe/75
+7GKPbTvkZ0s++e6pq766BcFf8PrhOna0Eei0i7486Xznrjvvav5OfevCD/9f57Ai3/jouDvvd/S+
+rw48+tYfXrH2OnF/t+Pfi59+5ge4+k2vepsLGG8GJhPuJQ+AtgNf5AY4PvqZD4H66xrBZvc/+IVP
+fhUs4AXxl8D1Ma1dDnxfAD9IQdT1boSty1+bdIZCDqowggI8HfREaL/zxbCE/h1aYMpSKDIPTlCH
+lZPe5XxIOBnmTINNu4j/blg2CTavhbzj4QFJODwFUimKRCFi7XDIQiRasIcYnKEGWzLFIq7wiM8j
+H9vQyEX1BZFKdVvcA414RTO+kI4/zOCwZCdGCFYxh3GEXvkA2UQguoqQYNvjG/uYyD9uMZBqHKTx
+IACCTnryk538gChHKUoPmPKUpuyAKlepSg50gAOwjCUHNkDLWtJSA7jMJS4r0qEP3XFQmuIRKIcJ
+gg8Uk5Sl/AAqU+kBVrbylbKc5SxtecsN6HKXGnDIHduUPZVwkpihDCcyPaDMZXagmc50pTpluYFp
+2lID1rwmBrKpkF7mDETB/oziA8D5SWMiU5nlROU5ndnKaMKyndS0Zjx1OU+JbDOIbrLJN8FpzGOO
+M6CnHGg6XwnNWCKUmvC8ZjbpmRB7YmpdSdknP8V50WU2E50bNehH37nQXDZUm1Ni0xdRuNKK+pOU
+5HSpRlm5zmjOtJYhlSdJB2LSbVoMjAVRaU//CVChwpSoHfWoO5FaU2w6NKcUeyp5JkpMn1o0mVYl
+qDqzKs2EJpWhSxVIU3P6VIhIlZ8/BSpGmUlQtmrVrV0d6VfvSRmLUYSsw/TpP4Nqzqs+s6gH3Wo1
+RXrTkvqSYiCCqkbuStGzorWxfYVsZAFL2bjKFaxB9NqOEAtKs7YUtDGV4qlkFVpanGJWPNkjFGfL
+SlXGCtSxjzXqbN9qU9Oa8KGIyydr+8nSUfo2o8Bdq3BJq1TbIhefxtttYj1bVdim06BtBWlgK2tZ
+wubISj0N5WL3+lK1cnS64q1tPS/rVONRaaXNdS57h4pV2VIXroO97XnzSZDletK1ek1rbOFLU/mW
+97qZcol2W9vb/QL3vQzmqoMfjFxiwaSNNgxx2ERMYrGSJ3E7I7BmUbxiFZ/YxUBpMf+OAuOeyHgo
+LH7xjFOM4xrv5MZFsS+Qk+JjpaR4x0fuMZKHfBQlOznIOY5xkk0SEAAAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultg_dgr.gif
+
+R0lGODdhXwBIAPcAAAAAAAgICBAQEBgYGCEhISkpKTExMTk5OUJCQkpKSlJSUlpaWmNjY2tra3Nz
+c3t7e4SEhIyMjJSUlJycnKWlpa2trbW1tb29vcbGxsbG/87OztbW1t7e3ufn5+/v7/f39///////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAxCByI
+IYPBgwYJEkSIUOFAhgcdCoSYUCLFDBILUnR4MWNHixtBQvQYkmPJhycXpkQ5UiRDki1NxmT50mVD
+mxFxVpRZk+dNlTOB9lT40WdOozuJrjwI4UHTp06jQp0qtSrVq1azYt2qVSrPBwDCih0rNgCAAGjR
+CljLdoCAAXAHEJBLoG7dAnjzGihgoK+BA38PCEZwAIHhwwkQJFicQEHjxo4VRH6glCnZy2fPphUQ
+gPNat3Hj1qVLoEDpvHz5+gUsuHXhw4YTM34sObJtBZSFZgCLmSxazZ07t30beq7du6fx7vXbV3Bg
+wtARK54tGbJ1yblpZoDQe6zZtGqF/n8mLto4ctSpmQd2HV367OvV40PQvbu7d+DB2b4lL5e0XdOo
+Lbfaeq3BFtt0jMV3W2PZjcSdfZmBl99wofV33GnJCThggYW9diB18EHm2Hwa3cQbhL+Fp99+FY52
+HIB6qdYcgR0aKBuICopIWUwP2vcdeJ5RKJp/d8GYHnPOsWcjgovlqOADM53oI35BjtcikUYeOSN7
+NbpH3YLyDYVBj939uJl4LA55IYYxqscah0u+52R8UP4kkJRl/lillcVhmZyWf9HooZcJghkZBGKS
+2ZuZKgpZnn94ZShjc29CN+iNTcJnWwKIHjUQnotSiSZoal6YpYaButYloZkqaFud/hgRpShmjE7I
+Z6n/oYdqqkrChmmTm9bGYFIT1QehZprtmeajL/6J6puDraoYk5peh6hMs15W656kwmXei0bummS0
+cX5ZLW5fHRvhmfp1662fAU4KbYHlFiqitZUZlK1v+Nm6rIWmhjsprzVeymSwOZKoHai06onmvwD/
+56y8NLb3IY6GZlesZSj2yy1/dEEqsJuVSvtriMKiq91uXDX1wMswP+CAzA7UbLPNDeSs884MNNAz
+A0AHzcACQw+9wNFIK7CA0rU1jfCIK4/ZFVQxwzzz1Tc70IDWWu+c889CC0000mQnvbTTruJbYk5T
+v+xy1VfTnPXWOXfNM9hhj110/tlLn32209XOx2PbUVUts9xzc+311z77HPbeRvPNNNqGDjtUy4XD
+TTPiNdO9OOOPBz0230cz/TfgaXfqqdRcGW415zgrvjjQjucN9OiSn970vWHayTrhmmOd+Oeg1y62
+0ZGbLZnuc46YKOFvxyz88HbzbLztuJc9Odq8T+b7760HP33nXVf/Nd7HZ0+26ZQ/zenqBWHu+svj
+x+651z9ff/vepG+PupOdMgnmove6+snuc+jDnvr6tjzKBS5WQJEfAekHO/Ld7276gxzpSse8tNGJ
+JwN0HdZgd0H8NS50eusfAx2YunxtB3girKDizAe60PEvecpjIQBdGELDxS1r/hYsoeMySDT+ac9v
+OryXwjamL+jFEIgWpOEJiYjDI7avewyiTw/FR0Ip1hCFRlzfCrnXQiYmRH7zM+AMEZjA/aUwd1dM
+2aHMGKstSu9wUBSizvIHxg2usIOBW9tOJPjEPB7QejbUoArj6CRYeQoCIIikJCcJgg9Y0gOY7IAm
+OcDJDXhSA6AcyAVGaYFSVuCUFEjlBFYpgVZG4JUQiKXVOne+yO1OjrgR0wMoyUtLfgCTHtBkBzjJ
+AU9uAJQaECUpTYlKVbLSlbCUJf1oWbukydFaieLlJH35y0xuspOfDKVARnmBUlrglBVIJQVWOYFW
+SuCVEYjl23BWS2t60Hm+/tulNiXpS2AKk5jGRKYyy8nMdDqzndCMpzTltsfble6awlIdBAcCyX1W
+spLADOY3ixnOZI5zmeds5jqf+c5ozpOaonvoPd9HrILo06L99OYwwXlMcWKAnOZEpzrZ6U54ynOW
+dkvp6R440WJVdJ/c9OdGA2pTnBZ0pyT16ULpWU2VVu5alXkpUi8pU4B2dKA5FSlPE/rTaQbVoUMt
+o1COqs0PYFSpM+VoTT16U5Dq9KA9NSlQG2pLXFpniYLUalu5qtG4MpWuTg2pQUeK0JIq9KRn7Wvz
+OMVDi1YypoX16lzB+lS8knWqKEXrLRPmQsH2krD/pKlAP0pQxUK1sVKF+yxf7em+JUKErb18a1dV
+21S7ijWqejXrbK2KRYWNxLSUxGxq5braurb2rozN62P3Wk/ilrEluE2ucpf6VdaGdbFjdWxZGVrd
+tJI2JsjdJmq5u1nvdja6n5VteUerxJlkd5u6zSxvEetb8AJ3usKdr1+rI9Gippef6zVsd5373ddK
+d7xUFSp9I5pNmG5Xwe1l8HvDG1vqVtW8myqwQg4cyQtrtrmJhS6Hg0veD0+YwN8LoYzbNuMa0xh+
+RXEh/OjYUh4XdWU9FiSOV+JjmIgJyD8usk5+nGP6BLnJSDby95Ts5CQL+clEvrKVoUzlKC9ZyjvW
+MpixHBSBBAQAADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultg_bla.gif
+
+R0lGODdhXwBIAPcAAAAAABAQEBgYGCEhISkpKTExMTk5OUJCQkpKSlJSUlpaWmNjY2tra3Nzc3t7
+e4SEhIyMjJSUlJycnKWlpa2trbW1tb29vcbGxsbG/87OztbW1t7e3ufn5+/v7/f39///////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAxCMRw
+oaDBggMTEjxoUOFAhg0dLoQocSLDihARKsx4AWNGjxQlcgR5UeTHjScdjjQZUmVKlC1hlky40mVM
+mi9x3nyYk+fOmjIPkhTKcmbQiDaN+iz4AMKDpk+dQp0qtWrUq1SxWs3KdatXrWAfBH0AoKzZs2jT
+ql3Ltq3bt2jFLmUKt67du3jXyrWIkGzev4ADn5Ub0q/gw4jfim1pOLHjx2UfxGwMubJgyUQHUrbM
+GS9mpAI3dx6tWKlo0qjVfu6o8HTq15FBC7zgGnZqzC5r2yYt2abu3Z33Lv0N3LJwvsSLQz7OMLly
+x8wPOn+OWDjE6dQvz+2IPTtgwiW7/nvPu3hmV6xPnzp44KC9+wbw4zdgQL/+AgYL8udXwJ9/gv//
+ISAgAgcUeIABCBagIAEDDCCAAG2tplFoTlWIXnrpredeew04IN9889WHn34LKFBifwoAmMCABBqI
+oAEKFkAAgwIEEKFpVlkoFYYabuihh/IxECJ995FY4okpqsiigQcmuGCDA9jIloStWQiVlRiyx96G
+HX4opIgjkoiifwAu6aKTMtII4ZQ4XpVjlhpuySGQ8X1pX5j7IaniigMy+WKMDDq4pl6ZaaYjV3D6
++KOXQxJp5JhJBtjnmTAuSKOUhE740JVuZpmhllzSCZ+dROJ5ZH97mlngn082iKlq/prORtubWPIo
+55yMgmkkkqiWOemqaM4o6I2+HXqorYp2GWSjRYqpp5K/NlmpjA0+GGFSnHK6I7Kh5irirpBCK6Cf
+wV56rU5MvTkVnKC+JyqI35pqYq++jkspoFC+mlZ0BmmLKI/Jvkuqo2KOKW6LwE4rrLVTjmXlscje
+qmydzMr7bL0IS4vvsA1vl9XDnvborrf2PWowxuQqbG7HfHF3bK3q3YrrsvE+erGk9ia8cZTnFgby
+tuz6OPGojZrKK5k4Z8xqmhzr1bKhnWb7qciL0nynzfQmnfLGDGdaqL8wZxgwyQTrFy7K91rqoL5x
+tUlryO3OTHHNzmbNZ84at8oz/puFYvBx1NyObHXJBaN48NZqdw1r3w984PjjkH/gweQedGB5Bxxg
+zsEGm2+wgQaga5DB6AdZYHoFqFNAwQSsS+B6BBFAILt6o+LHn4AwEnCjbH5H7rvklF+uOQedex76
+6KQXZPrpqa/e+uux7wgkkbcTKOPurNHU+O+PUz755cSH77nxxyevPPMVqM76BK5LALvsTr1HvQLj
+Xs93btxDHrzw4hd/vOilWx7q0uc89kFvdrQL0YlwZz9C+SZ/jvMA8CpnucyJb3yhE535LiDA5q2v
+fe+bnXuEtJ8UFaiBqsEWBCP4PQoOr3ifAx3yMmCQ5VlggOp7nvuil6HaLdB6/rpjmaz6tULvuTB8
+m/Nf+WhYQ/Tl0IA7hJ+cFOifEwbRaeiizQonKLwXji+GogNgE51YQBDyMIHzq98VU5jF7eXPiODT
+HOcwuMQA3tCDOgxh/NpDwhMlwIrnGiIRi9hC8F2QfBo0nw1xWMYDSs+H1TsACve1nd5BUIL7eyEM
+M4g8OzLyg47co4fm90dJrpGST7PkJb/HP+LNEZEZEOP5yAjKKD6SivQD4rUYQ8hMWtCVdJThBjtI
+wFrqUU59rKIpsQcaN76xkBU8JBhnOMY7FjOPZ2QPJHO5TL7Jxpm/g2M0XalEYTJxlp/EphTlZzsT
+dtNrsQJnOFlpSGDCUpYcuiTmE82IQG3iUo3MzF5oisjFCsqxnIn0JB6heMwRNqCEpZxk23gnT99l
+cpybNOc5F7lQft4yjbr0pkoqqj/v1dOeYEzoGNPJ0OiJEpcRPeVE8ddLFw7vldPEJ0ev2dJ+Tq+d
+AGVTscLyFXWBDGxgednfjEpUqCSlb9uJVVQFmkXeCRKqV+UdUKoq1ax2tWVf3epUi2JVsFJ1rGQt
+q1i9etasDkWtPWHrW8Ma11Q+Fa47kWta6ZrXhQQEAAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultg_no.gif
+
+R0lGODdhXwBIAPcAAAAAAISEhMbGxsbG////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAFCBhA
+sCBBgQgRGjSYMOHCgg0VPhwQUeBEihUvRtSYcWLFgR47PvzIcWNIhycbllSZEuVIkQtJtrT40mRN
+ljddxoTJkCdEnzJzShRKkyhIoyt1EgzAtKnTp1CjSp1KtarVqEMhBgDAtavXr2DDih1LtqzZrwGK
+/tx6tq3bt3DDpq3JNq7du3i7BrhZN6/fv2X39kTYF7DhwwAE/ySMuLFhxQcTFnZMGS7kiJMrazar
+eGPmzaDlRkb5ObRprnttlj4dOi3OAatZb3adFbbs26hf28Ytm7ba3bxP+34YOzhi2iOLG3/8G6Py
+5X/n7hTwHHpeyKOpWweNveHV7+DD/ounOl3g+PPo00ctT129+/fgBxOGT78+1MUK7eu3n53m/v/v
+YeQSgASiZxNsBSYInm4KNmgVgw5GiJVSElbolFIIWlhhbRRpaGFz5nko4VGLiSghXyY6yF6KKsrX
+HosJrghjjPiFOCOBNQ4UAAE89ujjj0AGKeSQRBZp5I+CmbTjkUw26eSTQaaG05JQVmnllT36phaV
+WHbpZZFaLsTll2SWSUCYBo1p5ppXolmQmmzG6eRwYsppJ5TIxQTnnXxGCSJ1fQZKpHSD7SlooNgJ
+COihjGa5YqOQdicZpI1KShiljF7mHaaHdqaSoZyumSRLoIZappQDmtqnliSWqqqXQm4udSOBuvXH
+oa3N4Uqii7cqiqGuSM2Uq6+9BsVesUD5BKywu+Y4rLG8/nlgtM0uG+y1x0pbq7XZVkvss8p+S2JA
+AAA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray8b_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAAAAAB/rQgfAAAAAmJLR0QAUMHmcsYAAAACdFJOUwCB
+7Cx+jgAAAFRJREFUeJzt2EsKACAMQ8Eqvbefi+sRjIKLwMs6DKWbQkuPD8nQ2aEWV30Z5RhUVFRU
+VNSbu6XHaQOoqKioqE5qRpO7U246bQAVFRUV1UlN/ft3kQ17SwUGfG3ofgAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray8b.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAAAAAB/rQgfAAAAAnRSTlMAgewsfo4AAABUSURBVHic
+7dhLCgAgDEPBKr23n4vrEYyCi8DLOgylm0JLjw/J0NmhFld9GeUYVFRUVFTUm7ulx2kDqKioqKhO
+akaTu1NuOm0AFRUVFdVJTf37d5ENe0sFBnxt6H4AAAAASUVORK5CYII=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray16b_bk.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAAAAAAvPdRcAAAAAmJLR0RQYF2EHz4AAAACdFJOU4AB
+Ohdl5QAAAH1JREFUeJzt18EJwzAQRUEpuG8rlTst5KDBCN4U8Hnsbecap7jGWGB2ze2Tz2f7JFOq
+UKpQqlCqUKpQqlCqUKpQqoB+K+Ggq5YqlCqUKpQqlCqUKpQqlCqUKlxj3M/+2S84wUFXLVUoVShV
+KFUoVShVKFUoVShVmOvtgr/9ACicBgIFSbXsAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/gray16b.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+EAAAAAAvPdRcAAAAAnRSTlOAAToXZeUAAAB9SURBVHic
+7dfBCcMwEEVBKbhvK5U7LeSgwQjeFPB57G3nGqe4xlhgds3tk89n+yRTqlCqUKpQqlCqUKpQqlCq
+UKqAfivhoKuWKpQqlCqUKpQqlCqUKpQqlCpcY9zP/tkvOMFBVy1VKFUoVShVKFUoVShVKFUoVZjr
+7YK//QAonAYCBUm17AAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultgb.gif
+
+R0lGODdhXwBIAPcAAAAAAISEhMbGxsbG////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAFCBwo
+cIDBgwYJEkSIUOFAhgcdFoQ4QKIAihUlUtS4kSNEixhBdnQY0iNDkiMVlkT50WRDlxFhJlSZcmHN
+hzcntmR5UmZGmztpBgXak+dLozGRzrQZoKnTp1CjSp1KtarVq1J/4hwQAIDXr2DDih1LVqzOokLR
+Ej0YgGfXsnDjxr2Yk+7QrQzbrn0rt69fACvTHhUcUS9ern8Tx60beG1Mw2cRK54s9m7kpISXQobI
+l7JntYcxO14qwPDHzp4nDx6tlbVCvS1Rp04sOjRp16/tJpU92+9t262BSwwQlHdvucEv/1aevLRa
+48fhirSse/VD4quhRyfrczroidhF/mvfbjZz88ZbwwcfTx6see/Wz4Ynyb69V9xKzyPEjrK+feHd
+wUQcS/61xxx8tSkHmXz29VVdgg8uFyFXghVIHnoHdrdgXg0iRx2GEwq04X5YlWjih4yNtFleJrZo
+1XchBihiaKW5aGNWEILYGGw93ejjUzmmeFdbO/1opIQ65qQeaUb+qB+K1C35WpM3IogkY1ISRGWV
++VmpX5YDbWljlzIKpZ5DYrr4XplEzadSmi3it6ZR/NEEp4kAkonUgGbeiVWGema2oG5+/pkklHlV
+WOiLQsIY0ohsLVpVo/HFCKlBkk7qKKW7OZYpVZsiOphpJ306VaWHPneZiKZGFaSo6bURWVQABNRq
+66245qrrrrleCetyS2pFK6/EFlvsk6HCCKaIxjbrrK1eRqvRsqU9a22xbOZp53PXdqtroHICdeZr
+3pYLbbjatlkbV+aaiy6gFf6GabvlpmvvZXyKS6+38L4b4aD77dttjOACdym7AlubKqobHTxsws5y
+6muPFUL87K/IHrViwBY3myzDxdH4cMfEgvyxeKtWS/KxE5tsnawar8yytAU7h9bIMvdK85yvcZvz
+rjv7y5XPP+eabb84Udvq0prKK3HGr57c8rpPB30vwTwjrTXWQled9dULR+0y1RhbvXXYvwUEADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultgb_dgr.gif
+
+R0lGODdhXwBIAPcAAAAAAFJSUoSEhMbGxsbG////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAJCBw4
+oKDBggMTEjh4UCFBhggdLoQ4QOJEiBYpVlSoMSNFjxgldhT5kWTIhCMdpuRYUmVLlidhMnQZE+VL
+mzUf5hS4EudMmQ1N/qQ5FKhBkEV9BvUpoKnTp1CjSp1KtarVq1KBCgDAtavXr2DDigUboKzZs2jT
+ql2LVoDWsXDjymVLt25dt0q3yt3Ll6vdv4DL4uXJUG/fw2MDK6Y7GKNhxJC9Lp6cFm/Ix5EjU94s
++OJRgZgzI+a8WUDM0KL7kqZseino1JlXT279eSBq2HNlK6Yd0TZuyLp3u379+3DwwLRV3i4u9jjg
+1i6XMyfr3K5pmtKnS65+l2h27X65/jN+Cz6u+PF5y5s/v3YwYYPfwbNvr3RAfO3z1TaeibW/fwH5
+VfbeZ/8VWFWAbXnWm4EMRoXgWbz1RkCDFDb1oFkRKlQhhRcKltSGDXYYQIYJgcigiLw5ZKKBKNZG
+0IoFtriRTTD+1yJ2NfaHonc5YrVjXj1e9aNOBQUpZIfuKWikVUMqaN+SVA3pGJRT/XgZlVLteBKW
+WSJ5GpdQyejihAWUaeaZaKap5pppiikhmWzGKaecbs4I2px45mmmmyrq6SedXr65kAB/FqqmjNEZ
+quieXmK36KJNDkjoo4ZGWhillSKpFaaFWnrQpJzq2SREoIaKp5T8mSqqpk7eqeqpZZpu+SqsF0Zo
+Z6mzrlmnhrkCWuuHvca5a4nBssknr8UeGqidPIHp7FSC9kTkcNOOWa2gA1KbrbXSboutk992Cy6z
+15Ir7rk3lYuUtuMSxS66O7Ur1Lvpgruutd6Sm++94dZLQEAAADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultgb_no.gif
+
+R0lGODdhXwBIAPcAAAAAAISEhMbGxsbG////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAFCBxA
+sCBBgQgRGjSYMOHCgg0VPhwQceDEigImUmyoEWPHih8jhuR4EWRJhydJPvSYEuVKky9Ftsw402JM
+lQtZ3nSZE2ZPnBB9MhQaVOZOiUdt/gQaoKnTp1CjSp1KtarVq1J5EgwAoKvXr2DDih0bFqvZs0gh
+ciXLtm3bs3CtKj0oYK3bu3gBxN2bNabdvIDH8h3s9ObfwIi9Eia8tG7ix4oX8218GDJgyZOHIqxs
+GS/mvZo3d078OW5RhZxHvy19li7K1KrJsm5tFHZssbPNGh1g+zbY3FiZ+vYMXK7W3sO7Fjeelndy
+t8uranX+nG10qs0pIk9+fercjduH/nfv+zO87/FRDaNfT5Uy+/dQ3cOfL3/++9AC7dN3jVr//Y2v
++ccegEgJyN5uBq7HVILjLcjgdQ4+uNx0EkL4XV0VTkjTUBlO6FeHwKkH4mz1jfhZiSZKhmKKjJ2W
+HwEwxijjjDTWaCON+xE4UAA39ujjj/vJxOOPRBYJI321Gamkj/MhuOSTNTZ5HJRUxihlc0NWCeWV
+c2Wp5ZJcPuTll0ZeudKYZBIp5UtopskkfBsW1aabN+Z42px0RgkfZXkWaaeOePYp458NBSrokXu6
+WNehb/6nY0aGHhokSZEKiqRKlfbJpVIslgaUot/xN52o2ZEa6qOnEoVqnPiVuupIKKO+WhOrsiZF
+q6m31tqYqzqBmmuvraaqqq7B0gqsr7DyOuyxuBYUEAAAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/pal_bk_notrns.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+CAMAAABtGKfxAAACT1BMVEUAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAABAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBA
+gIBAgIBAgIBAgIBAgIBAgIBAgIBAgIBAgID/////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////8AAABAgID///+A
+AAD/AP+lmdfcAAAAAWJLR0TEFAwb4QAAARNJREFUeJxjOEwLwHD4ABzY29naWFtZWpibmZoYGxka
+6Ovp6mhraWqoq6mqKCspKsjLycpIS0lKiIuJiggLCQowMDIxs7CysXNwcnHz8PLxw8GoqaOmjpo6
+auqoqaOm0szUg3BQX1dbU11VWVFeVlpSXFRYkJ+Xm5OdlZmRnpaakpyUmBAfFxsTHRUZER4WGhIc
+FBjg7+fr4+3l6eHu5uri7OToAAejpo6aOmrqqKmjpo6aSjNTD8HB/n179+zetXPH9m1bt2zetHHD
++nVr16xetXLF8mVLlyxetHDB/Hlz58yeNXPG9GlTp0yeNHFCf19vT3dXZ0d7W2tLc1NjAxyMmjpq
+6qipo6aOmjpqKs1MpQUAAIrvy8PKBZ9nAAAAAElFTkSuQmCC
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/result_nsbug.gif
+
+R0lGODdhXwBIAPcAAEKEhIQAAMbGxsbG//8A////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAFDBhI
+cKCAgwgPFiyYMOFCgg0RPjQYUeDEihYfRpw4ACNHjxcrfhQZcmNJhxpJpjS5suFIlgtBtkTJUGVM
+mzVh5nR5kuZNnR1xQhRKEWhRnjMl9lTKMIDTp1CjSp1KtarVq1inKrwZgIDXr2DDih1LtqzZs2jD
+Bsg4VEDXtHDjyp07NkDLt3Tz6t371e5Ot3wDC4brt+1BvIMTK/Za+CjgxZAHN46IOLJluoU3Vr7M
+Oa1fk5s7iyZrl2Xo0aj7wjydGvVanwNYtxb9mulA2bM5195KEHduy7sf+v4NubbG4cQVv06JPLlk
+tkWbOw/c+Kj06XurN7yOPa/2hAEA/ogfT768+fPo06tfz778d4Th28ufT7/++cnb7evfz9+9YYXx
+9SfggOx9xlOABCaooHilIYXgghD2txtvsUVooYRI3XbhhvZNuNCDHIaYnocFgSjiieQF9yGKLJpn
+XEwmtijiclzJaONaK8Vo44bVBXXYji2+9yOQKArpFpFF/jQkkiHiBx6TM/4nkI5QJmggSgEUoOWW
+XHbp5ZdghinmmGR22SBNWZap5ppstvnlhGyl6eacdNa5JYm92annnmrieRufgAZqZoaxCWoooCqW
+eOiidr7YFKOQukljTXJGaumYOP5U6aWcetkjeJ2G6qmSbolqqpZGbnrqpamuKqqTa/C5GmpmLqkq
+K6NXKmXrrYeeydSuvAoKp6LBRupnocVCemxWzDbr7LNWEeqjtI7Z9pe1UlJ4rbbZQjctbN2+RO23
+2FbLrbneykRqueSe26636IoLrrrbwvuuvOzSG+667uob71L9EnVvQQEBADs=
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/palb.png
+
+iVBORw0KGgoAAAANSUhEUgAAAFUAAAA+BAMAAACo6ErwAAAAD1BMVEU5AIAAAACAAABAgID///9g
+vV68AAAAAXRSTlMAQObYZgAAADxJREFUeJxjUCIaKDAoCmIBAgxYwKjaUbWjailVq2yMBRiMqh1V
+O6qWFmpVXLAAh1G1o2pH1dJCLQltTwD2QvmJE5A5IQAAAABJRU5ErkJggg==
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/resultpb_no.gif
+
+R0lGODdhXwBIAPcAAAAAADkAhEKEhIQAAMbGxsbG////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAXwBIAAAI/gAJCBRY
+oKDBggMTEjh4UOFAhgYdEoRYQOJCihYpVlSoMSNGiR1BfnQYkuTIhycTluSYEiVEjy9FxlTZcuJM
+ljdp5nTJEGZPnD9N7rQZFGhDmUV1Jr1ocIDTp1CjSp1KtarVq1inGh0AoKvXr2DDih0bNoDZs2jT
+ql3LNu2ArWTjyp3btq5du295FuQ6t6/frncDCzabl2lEvn8Tkx3MuG7emIgVS/7auLLatzMjT55s
+uTPhm5o3K/bceUDS0KL/krZs+uhA1Kn7rq7cOmJC2LHlzm5ce+Pt3JJ3M65NEjfwscIHtzZp/HjZ
+5IFNC23unDL0u4V5Uq8O+DpeuNzp/np3DD583PHklRbYzh192+wQ2Vd3z7bwS/nO6a99/HOAgP8A
+BijggAQWOKB+lxmGkED+Gejggw8i6BZoEFZoIYASotWbbwxe6GGEGX7mWocflnhgiAFsqFCDJrYo
+AIopjkiiiybCSBxHLNL4oY0L0pSjjhfyOB2QJdoo1HpE7ohidgr+mCSIITLJkJNPGmikelRWSeCV
+RO2lZYVc3vclhFdCNiaUGWIWVJZn/sdjUWy2+aZtr7Vp5ZKnGaDnnnz26eefgPo5Z48MBmrooYgO
+6tAAiDbq6J5zFvfopIe+yRylmP4pJE6MZuqpnlxq9+mnoTY5qqelTnlqpqke1OmqhJOGGh+slIbZ
+06u0Nlpmf7k+amRmvTo6KKG4BhvosCsamyieMharrKDM0lnos8dGy+G01GoaraTZahsloRNlJe64
+5JZr1bUKSqueunqx26W76YLbrrwrrSvvu/fGiy6+++p7pIzz9ltvwD4BzC9S8A58MMIJ1+QvwwU3
+PNTD/0q8FEEBAQA7
+
+------=_NextPart_000_0000_01C56C2C.32F78410
+Content-Type: image/gif
+Content-Transfer-Encoding: base64
+Content-Location: http://entropymine.com/jason/testbed/pngtrans/stripe.gif
+
+R0lGODlhIAAgAPcAAMbGxsbG////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////ywAAAAAIAAgAAAIlwADCAwA
+oKDBggMTEjxoUKFAhg0dLoQoESLCihYxUtTIkONBiRM7erzo0CIAkBlHklSYsmRLlhtdxoQpUmZN
+mh9VnlSJ8mVCnwNN9pwZFOhDo0J1Kl2KM6dNpz+NhoRalGjVm1epZo3YlGvXlVGxbgU7dqjYo2en
+eg2rFW1aqUmfknXbVu1OuXPtmq0bly1fpHABW6XLNSAAOw==
+
+------=_NextPart_000_0000_01C56C2C.32F78410--
