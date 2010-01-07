@@ -1934,6 +1934,7 @@ struct FileInputStream extends InputStream {
     void reset() {
         dword pos = SetFilePointer(handle, 0, null, FILE_BEGIN);
         assert(pos != 0xFFFFFFFF);
+        unused(pos);
     }
 
     const String* getName() const { return file; }

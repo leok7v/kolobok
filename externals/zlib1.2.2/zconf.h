@@ -5,6 +5,7 @@
 #pragma warning(disable: 4131) /* old-style declarator */ 
 #pragma warning(disable: 4127) /* conditional expression is constant */ 
 #pragma warning(disable: 4702) /* unreachable code */ 
+#pragma warning(disable: 4996) /* This function or variable may be unsafe. */
 #endif
 /* zconf.h -- configuration of the zlib compression library
  * Copyright (C) 1995-2004 Jean-loup Gailly.

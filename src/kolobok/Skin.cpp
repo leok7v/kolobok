@@ -141,6 +141,7 @@ static void decodeAccelerator(const String& acl, int id, ArrayList &at) {
         assert(str->length() == 1);
         uchar ch = towupper(str->charAt(0));
         assert(L'A' <= ch && ch <= L'Z' || L'0' <= ch && ch <= L'9');
+        unused(ch);
         a.a.key = str->charAt(0);
     }
     delete str; str = null;

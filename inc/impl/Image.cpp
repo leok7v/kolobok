@@ -156,6 +156,7 @@ void Image::releaseDC() {
         assert(unselect != null);
         HBITMAP b = (HBITMAP)SelectObject(hdc, unselect);
         assert(b == bitmap);
+        unused(b);
         unselect = null;
         DeleteDC(hdc);
         hdc = null;

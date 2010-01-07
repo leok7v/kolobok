@@ -192,12 +192,14 @@ static LRESULT CALLBACK dragTrackerWindowProc(HWND hwnd, UINT msg, WPARAM wp, LP
     return DefWindowProc(hwnd, msg, wp, lp);
 }
 
+#pragma warning(disable: 4345) /* behavior change: an object of POD type constructed with an initializer of the form () will be default-initialized. */
+
 HRESULT DnD::registerDragDrop(HWND hwnd, LPDROPTARGET pDropTarget) {
 //  trace(L"registerDragDrop(%p, %p)\n", hwnd, pDropTarget);
     if (pDropTarget == null) return E_INVALIDARG;
     DropTargetNode* dropTargetInfo = findDropTarget(hwnd);
     if (dropTargetInfo != null) return DRAGDROP_E_ALREADYREGISTERED;
-    dropTargetInfo = new DropTargetNode();
+    dropTargetInfo = new DropTargetNode(); // warning 4345
     if (dropTargetInfo == null) return E_OUTOFMEMORY;
     dropTargetInfo->hwnd = hwnd;
     dropTargetInfo->prev = null;

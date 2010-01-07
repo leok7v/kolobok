@@ -88,6 +88,7 @@ HWND Window::create(HWND parent, int styleEx, int style, WNDPROC wndProc, HBRUSH
                         brush, null, *cn };
         ATOM atom = RegisterClass(&wc);
         assert(atom != null);
+        unused(atom);
         atoms.put((int)brush, cn);
         delete bs;
         delete cn;
@@ -113,6 +114,7 @@ String Window::getText(HWND hwnd) {
     int n = 1024;
     uchar* buf = new uchar[n];
     int k = GetWindowText(hwnd, buf, n);
+    unused(k);
     while (n < 1024*1024 && GetWindowText(hwnd, buf, n) == n - 1) {
         delete buf;
         n = n * 2;

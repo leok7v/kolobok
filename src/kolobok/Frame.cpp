@@ -19,6 +19,7 @@ Frame::Frame(HWND parent) : Panel() {
                     null, className };
     ATOM a = RegisterClass(&wc);
     assert(a != null);
+    unused(a);
     HMENU menu = null;
     HACCEL at = null;
     main.getSkin().getTopLevelMenu(menu, at);

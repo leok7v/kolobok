@@ -240,6 +240,8 @@ static void test_Image() {
             int w = 0;
             int h = 0;
             assert((i < countof(jfile) - 1) == image.load(jfile[i], w, h, headeronly != 0));
+            unused(w);
+            unused(h);
             if (i == countof(jfile) - 1) {
                 assert(image.getError()->compareTo(L"Maximum supported image dimension is 65500 pixels") == 0);
             }
@@ -252,6 +254,8 @@ static void test_Image() {
             int w = 0;
             int h = 0;
             assert((i < countof(pfile) - 1) == image.load(pfile[i], w, h, headeronly != 0));
+            unused(w);
+            unused(h);
             if (i == countof(pfile) - 1) {
                 assert(image.getError()->compareTo(L"IHDR: CRC error") == 0);
             }
