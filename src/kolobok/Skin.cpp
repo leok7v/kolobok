@@ -589,7 +589,8 @@ void Skin::pack() {
     // pack them in width <= MAX_WIDTH rectangle:
     const int MAX_WIDTH = 1280;
     int maxW = 0, maxH = 0, x = 1, y = 1;
-    for (int i = 0; i < n; i++) {
+    int i;
+    for (i = 0; i < n; i++) {
         Rect& rc = *(Rect*)dynamic_cast<const Rect*>(files.get(fileNames.get(ix[i])));
         if (x > 0 && x + rc.getWidth() > MAX_WIDTH) {
             if (maxW < x + 1) maxW = x + 1;

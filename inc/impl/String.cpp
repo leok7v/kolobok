@@ -4,7 +4,7 @@ String* String::guid() {
     uchar* buf;
     UUID uuid = {0};
     UuidCreate(&uuid);
-    UuidToString(&uuid, &buf);
+    UuidToString(&uuid, reinterpret_cast<RPC_WSTR *>(&buf));
     String* s = new String(buf);
     RpcStringFree(&buf);
     return s;

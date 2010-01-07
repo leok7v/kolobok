@@ -189,7 +189,8 @@ static void test_connection() {
 static void test_xyz() {
     sendWM(null, WM_NULL, 0, 0);
     Object* wnd = send(L"testerGetMainWindow", null);
-    for (int i = 0; i < 2; i++) {
+    int i;
+    for (i = 0; i < 2; i++) {
         sendWM(wnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
         sendWM(wnd, WM_SYSCOMMAND, SC_RESTORE, 0);
         // TODO SC_MINIMIZE puts window to background, 

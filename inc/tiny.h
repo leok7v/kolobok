@@ -10,6 +10,8 @@
 #pragma warning(disable: 4214) /* nonstandard extension used : bit field types other than int */
 #pragma warning(disable: 4201) /* nonstandard extension used : nameless struct/union */
 #pragma warning(disable: 4710) /* function not expanded */
+#pragma warning(disable: 4996) /* This function or variable may be unsafe. */
+#pragma warning(disable: 4291) /* no matching operator delete found; */
 #include <Windows.h>
 #include <WindowsX.h>
 #include "ObjIdl.h"
@@ -206,10 +208,6 @@ struct String extends Object and_implements Comparable {
         return s == null ? false : ustrcmp(val, s) == 0;
     }
 
-    static String* operator+(const uchar* s1, const String& s2) {
-        return String(s1) + s2;
-    }
-
     String* operator+(const uchar* s) const {
         assert(s != null);
         int n = ustrlen(s) + 1;
@@ -298,6 +296,12 @@ private:
     uchar const* val;
     mutable int hash;
 };
+
+/*
+inline String* operator+(const uchar* s1, const String& s2) {
+    return String(s1) + s2;
+}
+*/
 
 inline String* Object::toString() const {
     uchar buf[16];
@@ -715,8 +719,8 @@ struct Rect extends Object {
         return sb.toString();
     }
 
-    inline getWidth() const { return right - left; }
-    inline getHeight() const { return bottom - top; }
+    inline int getWidth() const { return right - left; }
+    inline int getHeight() const { return bottom - top; }
     
     inline operator RECT*() const { return (RECT*)&left; }
         
@@ -858,7 +862,8 @@ public:
     bool remove(const Object* o) {
         assert(o != null);
         Entry* e = head;
-        for (int i = 0; i < count && !Object::equals(o, e->data); i++) {
+        int i;
+        for (i = 0; i < count && !Object::equals(o, e->data); i++) {
             e = e->next;
         }
         if (i >= count) return false;
@@ -2826,7 +2831,7 @@ class ApplicationTester implements BroadcastListener {
     HANDLE pipe_reader;
     ObjectPipe object_pipe;
     HashMap str_map;
-    Tester(HANDLE pipe);
+    void Tester(HANDLE pipe);
     void eventReceived(const Message& message);
     static dword WINAPI pipeReaderThread(void* arg);
     ApplicationTester(HANDLE h);

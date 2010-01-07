@@ -17,6 +17,7 @@
 #ifndef _SQLITE3_H_
 #define _SQLITE3_H_
 #include <stdarg.h>     /* Needed for the definition of va_list */
+#pragma warning(disable: 4996) /* This function or variable may be unsafe. */
 
 /*
 ** Make sure we can call this stuff from C++.
