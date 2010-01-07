@@ -1,7 +1,9 @@
-@echo on
-rem current invokation directory is: ...\kolobok\projects\kolobok
-if not exist ..\tmp\kolobok mkdir ..\tmp\kolobok
-SubWCRev.exe . %1 ..\tmp\kolobok\~svn.tmp  >nul
+@echo off
+rem current invokation directory is: ..\..\kolobok\projects\kolobok
+rem uncomment next line to verify
+rem cd
+if not exist ..\..\tmp\kolobok mkdir ..\..\tmp\kolobok
+SubWCRev.exe ..\.. %1 ..\..\tmp\kolobok\~svn.tmp  >nul
 
 if not exist %2 goto :non_equal
 

@@ -211,7 +211,7 @@ struct ToolBar extends Panel { // TODO: externalize me
         ShowWindow(b4, SW_SHOW);
         // xxx
         
-        Window::put(hwnd, L"preferred", Point(Int.MAX_VALUE, 53));
+        Window::put(hwnd, L"preferred", Point(Int::MAX_VALUE, 53));
         Window::put(hwnd, L"layout", L"north");
         ShowWindow(hwnd, SW_SHOW);
     }
@@ -220,7 +220,7 @@ struct ToolBar extends Panel { // TODO: externalize me
 struct StatusBar extends Panel { // TODO: externalize me
 
     StatusBar(HWND frame) : Panel(frame) { 
-        Window::put(hwnd, L"preferred", Point(Int.MAX_VALUE, 24));
+        Window::put(hwnd, L"preferred", Point(Int::MAX_VALUE, 24));
         Window::put(hwnd, L"layout", L"south");
         ShowWindow(hwnd, SW_SHOW);
     }

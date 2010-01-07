@@ -119,7 +119,7 @@ void traceError() {
 }
 
 static longlong queryPerformanceCounter() {
-    LARGE_INTEGER pc = {0}, cps = {0};
+    LARGE_INTEGER pc = {0};
     QueryPerformanceCounter(&pc);
     return *(longlong*)&pc;
 }

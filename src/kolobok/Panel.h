@@ -2,6 +2,7 @@
 #include "tiny.h"
 
 /* base container for all panels */
+struct Frame;
 
 struct Panel extends Object and_implements BroadcastListener {
 
@@ -20,5 +21,6 @@ protected:
     HWND hwnd;
 private: 
     static LRESULT CALLBACK _wndProc(HWND hwnd, UINT msg, WPARAM wp, LPARAM lp);
+    friend struct Frame;
 };
 

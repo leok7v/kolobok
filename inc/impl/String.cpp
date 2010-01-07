@@ -1,11 +1,11 @@
 #include "tiny.h"
 
 String* String::guid() {
-    uchar* buf;
+    RPC_WSTR buf;
     UUID uuid = {0};
     UuidCreate(&uuid);
-    UuidToString(&uuid, reinterpret_cast<RPC_WSTR *>(&buf));
-    String* s = new String(buf);
+    UuidToString(&uuid, &buf);
+    String* s = new String((uchar*)buf);
     RpcStringFree(&buf);
     return s;
 }
