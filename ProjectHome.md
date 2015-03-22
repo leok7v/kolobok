@@ -1,0 +1,1 @@
+lightweight win32 UI framework and util classes slightly mimicing java.util
